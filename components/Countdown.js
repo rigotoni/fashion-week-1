@@ -10,12 +10,13 @@ const Countdown = props => {
     const [remainingMins, setRemainingMins] = useState(0);
     const [remainingSecs, setRemainingSecs] = useState(0);
 
-    let festivalDate = new Date('Mar 24, 2022 20:00:00');
-    festivalDate = new Date(festivalDate);
-    festivalDate.setUTCHours(8);
-    const UTCFestivalDate = new Date(festivalDate.toUTCString()).getTime();
-
+    
     useEffect(() => {
+        let festivalDate = new Date('Mar 24, 2022 20:00:00');
+        festivalDate = new Date(festivalDate);
+        festivalDate.setUTCHours(8);
+        const UTCFestivalDate = new Date(festivalDate.toUTCString()).getTime();
+        
         let interval = setInterval(() => {
         let now = new Date().getTime();
         let t = UTCFestivalDate - now;
