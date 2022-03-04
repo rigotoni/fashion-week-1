@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Navbar from './../components/Navbar';
 import HomepageHero from './../components/HomepageHero';
 import EventInfo from '../components/EventInfo';
+import EventSchedule from '../components/EventSchedule';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -27,6 +28,7 @@ export default function Home() {
 				</header>
 				<main>
 					<EventInfo />
+					<EventSchedule />
 				</main>
 			</StyledHome>
 
