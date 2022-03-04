@@ -6,8 +6,8 @@ const Footer = props => {
     return (
         <StyledFooter>
             <Container size="large" className="footer-content">
-                <div class="footer-lower-content">
-                    <div class="footer-links">
+                <div className="footer-lower-content">
+                    <div className="footer-links">
                         <ul>
                             <li>
                                 <a href="#">FAQ</a>
@@ -34,7 +34,7 @@ const Footer = props => {
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-links">
+                    <div className="footer-links">
                         <ul>
                             <li>
                                 <a href="#">
