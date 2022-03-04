@@ -17,14 +17,14 @@ const DaySelector = props => {
         <StyledDaySelector className="day-selector">
             <ul>
                 {days.map((day, index) => (
-                    <>
+                    <Fragment key={index}>
                         <li 
                             className={index + 1 === selectedDay && 'selected'}
                             onClick={() => {setSelectedDay(index + 1)}}>
                             {day}
                         </li>
                         {index < days.length - 1 && ' / '}
-                    </>
+                    </Fragment>
                 ))}
             </ul>
         </StyledDaySelector>

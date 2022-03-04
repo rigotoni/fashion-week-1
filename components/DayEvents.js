@@ -5,17 +5,17 @@ const DayEvents = props => {
     return (
         <StyledDayEvents>
             {selectedDayData.map((dayData, index) => (
-                <>
+                <Fragment key={index}>
                     <h3>{dayData.stage}</h3>
                     <ul>
                         {dayData.events.map((event, index) => (
-                            <li>
+                            <li key={index}>
                                 <span className="time">{event.time}</span>
                                 <span className="event-name">{event.name}</span>
                             </li>
                         ))}
                     </ul>
-                </>
+                </Fragment>
             ))}
         </StyledDayEvents>
     )
