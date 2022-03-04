@@ -1,12 +1,15 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import styled from 'styled-components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import Navbar from './../components/Navbar';
 import HomepageHero from './../components/HomepageHero';
 import EventInfo from '../components/EventInfo';
 import EventSchedule from '../components/EventSchedule';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import BrandBanner from '../components/BrandBanner';
+import Footer from '../components/Footer';
 
 export default function Home() {
 
@@ -29,12 +32,11 @@ export default function Home() {
 				<main>
 					<EventInfo />
 					<EventSchedule />
+					<BrandBanner />
 				</main>
 			</StyledHome>
 
-			<footer>
-
-			</footer>
+			<Footer/>
 		</>
 	)
 }
@@ -44,5 +46,6 @@ const StyledHome = styled.main`
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
+		min-height: 980px;
 	}
 `;
