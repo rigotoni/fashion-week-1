@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import theme from '../utils/theme';
 import Container from './Container';
 
 const EventInfo = props => {
@@ -6,7 +7,7 @@ const EventInfo = props => {
         <StyledEventInfo size="full" flexDirection="column" className="event-info">
             <Container className="info-container"  size="large"
                 flexDirection="column">
-                <div className="info-block">
+                <div className="info-block" data-aos="fadeInUp">
                     <h2>High Fashion Now on the Metaverse</h2>
                     <p>
                         The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event. 
@@ -14,8 +15,11 @@ const EventInfo = props => {
                     <a className="info-cta" href="#">
                         Learn More
                     </a>
+                    <div className="floating-content">
+                        <div className="striped-circle"></div>
+                    </div>
                 </div>
-                <div className="info-block">
+                <div className="info-block" data-aos="fadeInUp">
                     <h2>High Fashion Now on the Metaverse</h2>
                     <p>
                         The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event. 
@@ -29,11 +33,35 @@ const EventInfo = props => {
     )
 }
 
+const stripedCircleRotate = keyframes`
+    0% {transform: rotate(0deg)};
+    100% {transform: rotate(360deg)};
+`;
+
 const StyledEventInfo = styled(Container)`
     .info-container {
         .info-block {
             width: 600px;
             margin-bottom: 440px;
+            &:first-child {
+                .floating-content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    .striped-circle {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 100px;
+                        border: dashed 1px ${props => props.theme.color.gray800};
+                        position: absolute;
+                        top: -100px;
+                        right: -20;
+                        animation: 20s infinite ${stripedCircleRotate};
+                    }
+                }
+            }
             &:nth-child(even) {
                 margin-left: auto;
             }

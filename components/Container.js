@@ -42,6 +42,9 @@ const StyledContainer = styled.div`
 	&.large {
 		width: 1120px;
 	}
+	&.medium {
+		width: 920px;
+	}
 `;
 
 export default Container;
