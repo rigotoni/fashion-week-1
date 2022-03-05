@@ -1,40 +1,81 @@
 import styled, { keyframes } from 'styled-components';
 import theme from '../utils/theme';
+import Image from 'next/image';
 import Container from './Container';
 
 const EventInfo = props => {
     return (
         <StyledEventInfo size="full" flexDirection="column" className="event-info">
-            <Container className="info-container"  size="large"
+            <Container className="info-row"  size="full"
                 flexDirection="column">
-                <div className="info-block" data-aos="fadeInUp">
-                    <div className="event-info-content">
-                        <h2>High Fashion Now on the Metaverse</h2>
-                        <p>
-                            The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event. 
-                        </p>
-                        <a className="info-cta" href="#">
-                            Learn More
-                        </a>
-                    </div>
-                    <div className="floating-content">
-                        <div className="striped-circle"></div>
+                <div className="floating-content">
+                    <div className="floating-image floating-image-5 rellax" data-rellax-percentage="0.5"data-rellax-speed="-2" data-aos="fadeInUp">
+                        <Image src="/Shoe.png" layout="fill" />
                     </div>
                 </div>
-                <div className="info-block" data-aos="fadeInUp">
-                    <div className="event-info-content">
-                        <h2>High Fashion Now on the Metaverse</h2>
-                        <p>
-                            The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event. 
-                        </p>
-                        <a className="info-cta" href="#">
-                            Learn More
-                        </a>
+                <Container size="large" flexDirection="column">
+                    <div className="info-block">
+                        <div className="event-info-content" data-aos="fadeInUp">
+                            <h2>High Fashion Now on the Metaverse</h2>
+                            <p>
+                                The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event. 
+                            </p>
+                            <a className="info-cta" href="#">
+                                Learn More
+                            </a>
+                        </div>
+                        <div className="relative-floating-content">
+                            <div className="striped-circle"></div>
+                            <div className="floating-image floating-image-1 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5" data-rellax-speed="-1">
+                                <Image src="/ClothingGreenBG.png" width={263} height={410} />
+                            </div>
+                            <div className="floating-image floating-image-2 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5"data-rellax-speed="-2" >
+                                <Image src="/ClothingBlackBG.png" width={213} height={381} />
+                            </div>
+                            <div className="floating-image floating-image-3 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5"data-rellax-speed="-2" >
+                                <Image src="/ClothingYellowBG.png" layout="fill" />
+                            </div>
+                            <div className="floating-image floating-image-4 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5" data-rellax-speed="-2" >
+                                <Image src="/ClothingBlackNeonBG.png" layout="fill" />
+                            </div>
+                            <div className="floating-image floating-image-6 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5" data-rellax-speed="-2" >
+
+                                <Image src="/ClothingWhite.png" layout="fill" />
+                            </div>
+                            <div className="floating-image floating-image-7 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5" data-rellax-speed="-1"></div>
+                        </div>
                     </div>
-                    <div className="floating-content">
-                        <div className="striped-circle"></div>
+                </Container>
+            </Container>
+            <Container className="info-row"  size="full">
+                <Container size="large" flexDirection="column">
+                    <div className="info-block">
+                        <div className="event-info-content" data-aos="fadeInUp">
+                            <h2>High Fashion Now on the Metaverse</h2>
+                            <p>
+                                The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event. 
+                            </p>
+                            <a className="info-cta" href="#">
+                                Learn More
+                            </a>
+                        </div>
+                        <div className="floating-content" data-aos="fadeInUp">
+                            <div className="striped-circle"></div>
+                        </div>
                     </div>
-                </div>
+                </Container>
             </Container>
         </StyledEventInfo>
     )
@@ -46,11 +87,29 @@ const stripedCircleRotate = keyframes`
 `;
 
 const StyledEventInfo = styled(Container)`
-    .info-container {
+    .info-row {
+        position: relative;
+        &:nth-child(even) {
+            .info-block {
+                margin-left: auto;
+            }
+        }
+        .floating-content {
+            .floating-image {
+                position: absolute;
+                &.floating-image-5 {
+                    width: 1097px;
+                    height: 770px;
+                    top: 0px;
+                    right: -40vw;
+                    z-index: 2;
+                }
+            }
+        }
         .info-block {
             width: 600px;
             margin-bottom: 440px;
-            .floating-content {
+            .relative-floating-content {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -67,10 +126,52 @@ const StyledEventInfo = styled(Container)`
                     animation: 10s infinite ${stripedCircleRotate};
                 }
             }
-            &:nth-child(even) {
-                margin-left: auto;
+            &:first-child {
+                .relative-floating-content {
+                    .floating-image {
+                        position: absolute;
+                        /* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .2)); */
+                    }
+                    .floating-image-1 {
+                        top: -214px;
+                        left: -180px;
+                    }
+                    .floating-image-2 {
+                        top: 120px;
+                        left: -260px;
+                    }
+                    .floating-image-3 {
+                        width: 395px;
+                        height: 432px;
+                        top: 0px;
+                        left: 700px;
+                        z-index: 2;
+                    }
+                    .floating-image-4 {
+                        width: 320px;
+                        height: 500px;
+                        top: 90px;
+                        left: 1020px;
+                        z-index: 0;
+                    }
+                    .floating-image-6 {
+                        width: 454px;
+                        height: 454px;
+                        top: 680px;
+                        left: 0px;
+                        z-index: 1;
+                    }
+                    .floating-image-7 {
+                        width: 454px;
+                        height: 454px;
+                        background: linear-gradient(156.44deg, #FF6CF0 19.14%, #FEF8FF 84.82%);
+                        top: 650px;
+                        left: -30px;
+                        z-index: 0;
+                    }
+                }
             }
-            .floating-content {
+            .relative-floating-content {
                 z-index: 1;
             }
             .event-info-content {

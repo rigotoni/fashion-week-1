@@ -40,9 +40,10 @@ const StyledDayEvents = styled.section`
             .time {
                 font-family: Inter;
                 font-weight: 200;
+                color: ${props => props.theme.color.gray500};
             }
             .event-name {
-                font-size: 40px;
+                font-size: 48px;
                 letter-spacing: 0.1em;
                 color: ${props => props.theme.color.gray900};
             }

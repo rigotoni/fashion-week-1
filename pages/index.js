@@ -3,18 +3,26 @@ import { useEffect } from 'react';
 import styled from 'styled-components';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Rellax from 'rellax';
 
 import Navbar from './../components/Navbar';
 import HomepageHero from './../components/HomepageHero';
 import EventInfo from '../components/EventInfo';
 import EventSchedule from '../components/EventSchedule';
-import BrandBanner from '../components/BrandBanner';
+import Map from '../components/Map';
 import Footer from '../components/Footer';
+import TextBanner from '../components/TextBanner';
+import LowerBanner from '../components/LowerBanner';
 
 export default function Home() {
 
 	useEffect(() => {
 		Aos.init();
+		new Rellax('.rellax', {
+			speed: -2,
+			center: true
+
+		});
 	}, []);
 
 	return (
@@ -31,8 +39,10 @@ export default function Home() {
 				</header>
 				<main>
 					<EventInfo />
+					<TextBanner />
 					<EventSchedule />
-					<BrandBanner />
+					<LowerBanner />
+					<Map />
 				</main>
 			</StyledHome>
 
@@ -47,5 +57,6 @@ const StyledHome = styled.main`
 		display: flex;
 		flex-direction: column;
 		min-height: 980px;
+		margin-bottom: 320px;
 	}
 `;
