@@ -10,7 +10,7 @@ const Navbar = props => {
     } = props;
 
     return (
-        <StyledNavbar data-aos={dataAos}>
+        <StyledNavbar>
             <Container size={'large'} className={'navbar-inner-container'}>
                 <Image src="/NavbarLogo.svg" alt="Decentraland" width={167} height={90} />
                 <nav>
@@ -33,7 +33,7 @@ const Navbar = props => {
 
 const StyledNavbar = styled.section`
     height: 120px;
-    z-index: 1;
+    z-index: 10;
     .navbar-inner-container {
         height: 120px;
         display: flex;
@@ -41,23 +41,32 @@ const StyledNavbar = styled.section`
         position: relative;
         nav {
             margin-left: auto;
-            position: absolute;
+            position: fixed;
             top: 32px;
-            right: 0;
+            right: 12vw;
             ul {
                 display: flex;
                 flex-direction: column;
                 li {
                     margin-left: 62px;
-                    font-family: Tourney;
                     font-size: 32px;
                     font-weight: 100;
                     text-align: right;
                     line-height: 40px;
                     a {
-                        transition: 0.1s ease-in-out font-weight;
+                        transition: 0.1s ease-in-out all;
+                        text-shadow: -1px 1px 0 ${props => props.theme.color.gray500},
+                            1px 1px 0 ${props => props.theme.color.gray500},
+                            1px -1px 0 ${props => props.theme.color.gray500},
+                            -1px -1px 0 ${props => props.theme.color.gray500};
+                        color: white;
+                        letter-spacing: 0.2em;
                         &:hover {
-                            font-weight: 300;
+                            color: black;
+                            text-shadow: -1px 1px 0 ${props => props.theme.color.white},
+                                1px 1px 0 ${props => props.theme.color.white},
+                                1px -1px 0 ${props => props.theme.color.white},
+                                -1px -1px 0 ${props => props.theme.color.white};
                         }
                     }
                 }
