@@ -47,6 +47,7 @@ const StyledDaySelector = styled.section`
                          1px -1px 0 ${props => props.theme.color.red},
                         -1px -1px 0 ${props => props.theme.color.red};
             transition: 0.15s ease-in-out all;
+            letter-spacing: 0.1em;
             &:first-child {
                 margin-left: 0;
             }

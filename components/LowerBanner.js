@@ -13,14 +13,14 @@ const LowerBanner = props => {
                 <span>CATWALKS</span> | 
                 <span>NFTS</span> | 
                 <span>WEARABLES</span> | 
-                <span>POAPS</span> |
-                <span>AFTER-PARTIES</span> |
-                <span>ARTISTS</span> |
-                <span>DJS</span> |
-                <span>DIGITAL FASHION</span> |
-                <span>LUXURY BRANDS</span> |
-                <span>UPCOMING DESIGNERS</span> |
-                <span>DIGITAL + PHYSICAL IMMERSIVE EXPERIENCES</span> |
+                <span>POAPS</span> /
+                <span>AFTER-PARTIES</span> /
+                <span>ARTISTS</span> /
+                <span>DJS</span> /
+                <span>DIGITAL FASHION</span> /
+                <span>LUXURY BRANDS</span> /
+                <span>UPCOMING DESIGNERS</span> /
+                <span>DIGITAL + PHYSICAL IMMERSIVE EXPERIENCES</span> /
                 <span>MAINSTREAM BRANDS AND MORE</span> / 
             </Marquee>
         </StyledLowerBanner>
@@ -31,8 +31,10 @@ const StyledLowerBanner = styled(Container)`
     height: 120px;
     background: ${props => props.theme.color.red};
     font-size: 90px;
+    color: white;
+    letter-spacing: 0.05em;
     span {
-        margin: 0 25px;
+        margin: 0 30px;
         color: ${props => props.theme.color.black};
     }
 `;

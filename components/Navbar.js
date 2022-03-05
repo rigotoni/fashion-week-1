@@ -55,11 +55,7 @@ const StyledNavbar = styled.section`
                     line-height: 40px;
                     a {
                         transition: 0.1s ease-in-out all;
-                        text-shadow: -1px 1px 0 ${props => props.theme.color.gray500},
-                            1px 1px 0 ${props => props.theme.color.gray500},
-                            1px -1px 0 ${props => props.theme.color.gray500},
-                            -1px -1px 0 ${props => props.theme.color.gray500};
-                        color: white;
+                        color: ${props => props.theme.color.red};
                         letter-spacing: 0.2em;
                         &:hover {
                             color: black;

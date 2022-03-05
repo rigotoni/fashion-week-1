@@ -23,8 +23,11 @@ const StyledTextBanner = styled(Container)`
     height: 120px;
     background: ${props => props.theme.color.red};
     font-size: 90px;
+    color: white;
     span {
-        margin: 0 25px;
+        margin: 0 40px;
+        letter-spacing: 0.05em;
+        color: ${props => props.theme.color.black};
     }
 `;
 
