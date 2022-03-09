@@ -18,7 +18,7 @@ const EventInfo = props => {
                         <div className="event-info-content" data-aos="fadeInUp">
                             <h2>High Fashion Now on the Metaverse</h2>
                             <p>
-                                The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event. 
+                                FOUR DAYS FILLED WITH GREAT CONTENT FOR THE ONES WITH STYLE 
                             </p>
                             <a className="info-cta" href="#">
                                 Learn More
@@ -63,13 +63,11 @@ const EventInfo = props => {
                 <Container size="large" flexDirection="column">
                     <div className="info-block">
                         <div className="event-info-content" data-aos="fadeInUp">
-                            <h2>High Fashion Now on the Metaverse</h2>
-                            <p>
-                                The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event.  The world's greatest brands are coming to Decentraland on this fabulous event. 
-                            </p>
-                            <a className="info-cta" href="#">
-                                Learn More
-                            </a>
+                            <span className="content-copy">
+                                <span className="top-content">FASHION <span>WITHOUT</span> LIMITS</span> 
+                                <br/>
+                                <span className="bottom-content">AS NEVER SEEN BEFORE</span>
+                            </span>
                         </div>
                         <div className="floating-content" data-aos="fadeInUp">
                             <div className="striped-circle"></div>
@@ -92,6 +90,23 @@ const StyledEventInfo = styled(Container)`
         &:nth-child(even) {
             .info-block {
                 margin-left: auto;
+            }
+        }
+        &:nth-child(2) {
+            .info-block {
+                .event-info-content {
+                    display: flex;
+                    flex-direction: column;
+                    .content-copy {
+                        font-size: 80px;
+                        .bottom-content {
+                            color: ${props => props.theme.color.red}
+                        }
+                    }
+                }
+                .info-cta {
+                    width: fit-content;
+                }
             }
         }
         .floating-content {
@@ -130,7 +145,7 @@ const StyledEventInfo = styled(Container)`
                 .relative-floating-content {
                     .floating-image {
                         position: absolute;
-                        /* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .2)); */
+                        box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.2);
                     }
                     .floating-image-1 {
                         top: -214px;
@@ -189,8 +204,8 @@ const StyledEventInfo = styled(Container)`
                     color: ${props => props.theme.color.gray800};
                     font-family: Inter;
                     font-weight: 200;
-                    font-size: 24px;
-                    line-height: 32px;
+                    font-size: 40px;
+                    line-height: 56px;
                     margin-bottom: 48px;
                 }
                 .info-cta {

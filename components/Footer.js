@@ -5,8 +5,8 @@ import { FaDiscord, FaRedditAlien, FaGithub, FaTwitter, FaInstagram } from 'reac
 const Footer = props => {
     return (
         <StyledFooter>
-            <Container size="large" className="footer-content">
-                <div className="footer-lower-content">
+            <Container size="large" className="footer-content" flexDirection="column">
+                <div className="footer-top-content">
                     <div className="footer-links">
                         <ul>
                             <li>
@@ -27,10 +27,6 @@ const Footer = props => {
                             /
                             <li>
                                 <a href="#">Code of Ethics</a>
-                            </li>
-                            /
-                            <li className="copyright">
-                                2022 Decentraland®
                             </li>
                         </ul>
                     </div>
@@ -64,6 +60,9 @@ const Footer = props => {
                         </ul>
                     </div>
                 </div>
+                <div className="footer-lower-content">
+                    Decentraland® 2022
+                </div>
             </Container>
         </StyledFooter>
     )
@@ -73,7 +72,7 @@ const StyledFooter = styled.footer`
     background: ${props => props.theme.color.red};
     .footer-content {
         padding: 32px 0;
-        .footer-lower-content {
+        .footer-top-content {
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -105,6 +104,17 @@ const StyledFooter = styled.footer`
                 }
             }
         }
+    }
+    .footer-lower-content {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        font-family: Inter;
+        margin-top: 30px;
+        color: white; 
+        opacity: 0.7;
+        font-size: 12px; 
     }
 `;
 

@@ -20,7 +20,8 @@ export default function Home() {
 		Aos.init();
 		new Rellax('.rellax', {
 			speed: -2,
-			center: true
+			center: true,
+
 
 		});
 	}, []);
@@ -52,11 +53,13 @@ export default function Home() {
 }
 
 const StyledHome = styled.main`
+	overflow-x: hidden;
 	header {
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		min-height: 980px;
 		margin-bottom: 320px;
+		padding-top: 120px;
 	}
 `;

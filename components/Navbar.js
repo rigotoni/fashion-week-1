@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import theme from '../utils/theme';
 import Container from './Container';
 import CTA from './CTA';
 
@@ -32,37 +33,49 @@ const Navbar = props => {
 }
 
 const StyledNavbar = styled.section`
-    height: 120px;
+    height: 80px;
     z-index: 10;
+    position: fixed;    
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255, 0.4);
+    /* box-shadow: 0 2px 10px 0px rgba(0,0,0,0.2); */
     .navbar-inner-container {
-        height: 120px;
+        height: inherit;
         display: flex;
         align-items: center;
         position: relative;
         nav {
             margin-left: auto;
-            position: fixed;
-            top: 32px;
-            right: 12vw;
             ul {
                 display: flex;
-                flex-direction: column;
                 li {
-                    margin-left: 62px;
-                    font-size: 32px;
-                    font-weight: 100;
+                    margin-left: 62px; 
+                    font-size: 16px;
+                    font-weight: 200;
                     text-align: right;
                     line-height: 40px;
+                    font-family: Inter;
                     a {
                         transition: 0.1s ease-in-out all;
-                        color: ${props => props.theme.color.red};
+                        color: ${props => props.theme.color.black};
                         letter-spacing: 0.2em;
+                        position: relative;
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            height: 1px;
+                            width: 0;
+                            left: 0;
+                            bottom: -6px;
+                            background: ${props => props.theme.color.black};
+                            transition: 0.25s ease-in-out all;
+                        }
                         &:hover {
-                            color: black;
-                            text-shadow: -1px 1px 0 ${props => props.theme.color.white},
-                                1px 1px 0 ${props => props.theme.color.white},
-                                1px -1px 0 ${props => props.theme.color.white},
-                                -1px -1px 0 ${props => props.theme.color.white};
+                            &:after {
+                                width: 100%;
+                            }
                         }
                     }
                 }

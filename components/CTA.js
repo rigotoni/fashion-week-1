@@ -19,6 +19,16 @@ const StyledCTA = styled.a`
     padding: 22px 32px;
     font-size: 22px;
     letter-spacing: 0.1em;
+    transition: 0.1s ease-in-out all;
+    position: relative;
+    border: 1px solid transparent;
+    &:hover {
+        background: white;
+        color: ${props => props.theme.color.black};
+        transform: translate(10px, -10px);
+        border: 1px solid ${props => props.theme.color.black};
+        box-shadow: -10px 10px 0px 0px ${props => props.theme.color.black};
+    }
 `;
 
 export default CTA;
