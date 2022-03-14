@@ -15,7 +15,7 @@ const Navbar = props => {
             <Container size={'large'} className={'navbar-inner-container'}>
                 <Image src="/NavbarLogo.svg" alt="Decentraland" width={167} height={90} />
                 <nav>
-                    {/* <ul>
+                    <ul>
                         <li>
                             <a href="#">About</a>
                         </li>
@@ -25,7 +25,7 @@ const Navbar = props => {
                         <li>
                             <a href="#">Map</a>
                         </li>
-                    </ul> */}
+                    </ul>
                 </nav>
             </Container>
         </StyledNavbar>

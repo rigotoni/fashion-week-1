@@ -38,13 +38,13 @@ export default function Home() {
 					<Navbar dataAos="fade-down" />
 					<HomepageHero dataAos="fade-up" />
 				</header>
-				{/* <main>
+				<main>
 					<EventInfo />
 					<TextBanner />
 					<EventSchedule />
 					<LowerBanner />
 					<Map />
-				</main> */}
+				</main>
 			</StyledHome>
 
 			<Footer/>
@@ -55,11 +55,11 @@ export default function Home() {
 const StyledHome = styled.main`
 	overflow-x: hidden;
 	header {
-		/* height: 100vh; */
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		min-height: 980px;
-		/* margin-bottom: 320px; */
+		margin-bottom: 320px;
 		padding-top: 120px;
 	}
 `;
