@@ -138,7 +138,7 @@ const StyledEventInfo = styled(Container)`
                     position: absolute;
                     top: -100px;
                     right: -20;
-                    animation: 10s infinite ${stripedCircleRotate};
+                    animation: 10s infinite ${stripedCircleRotate} linear;
                 }
             }
             &:first-child {

@@ -15,17 +15,17 @@ const Navbar = props => {
             <Container size={'large'} className={'navbar-inner-container'}>
                 <Image src="/NavbarLogo.svg" alt="Decentraland" width={167} height={90} />
                 <nav>
-                    <ul>
+                    {/* <ul>
                         <li>
-                            <a href="#">ABOUT</a>
+                            <a href="#">About</a>
                         </li>
                         <li>
-                            <a href="#">AGENDA</a>
+                            <a href="#">Agenda</a>
                         </li>
                         <li>
-                            <a href="#">MAP</a>
+                            <a href="#">Map</a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </nav>
             </Container>
         </StyledNavbar>
@@ -39,7 +39,7 @@ const StyledNavbar = styled.section`
     top: 0;
     width: 100%;
     backdrop-filter: blur(15px);
-    background: rgba(255,255,255, 0.4);
+    background: rgba(255,255,255, 0.8);
     /* box-shadow: 0 2px 10px 0px rgba(0,0,0,0.2); */
     .navbar-inner-container {
         height: inherit;
@@ -53,14 +53,14 @@ const StyledNavbar = styled.section`
                 li {
                     margin-left: 62px; 
                     font-size: 16px;
-                    font-weight: 200;
+                    font-weight: 500;
                     text-align: right;
                     line-height: 40px;
                     font-family: Inter;
                     a {
                         transition: 0.1s ease-in-out all;
                         color: ${props => props.theme.color.black};
-                        letter-spacing: 0.2em;
+                        letter-spacing: 0em;
                         position: relative;
                         &:after {
                             position: absolute;
@@ -69,7 +69,7 @@ const StyledNavbar = styled.section`
                             width: 0;
                             left: 0;
                             bottom: -6px;
-                            background: ${props => props.theme.color.black};
+                            background: ${props => props.theme.color.red};
                             transition: 0.25s ease-in-out all;
                         }
                         &:hover {
