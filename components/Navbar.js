@@ -13,7 +13,7 @@ const Navbar = props => {
     return (
         <StyledNavbar>
             <Container size={'large'} className={'navbar-inner-container'}>
-                <Image src="/NavbarLogo.svg" alt="Decentraland" width={167} height={90} />
+                <Image className="logo" src="/NavbarLogo.png" alt="Decentraland" width={167} height={42} />
                 <nav>
                     <ul>
                         <li>
