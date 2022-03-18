@@ -21,11 +21,11 @@ const EventSchedule = props => {
                         name: 'Selfridges Opening',
                         stage: 'Independent Stores',
                     },
-                    {
-                        time: '07:00 PM',
-                        name: 'NRT1-META DCL Sneakers',
-                        stage: 'Undefined',
-                    },
+                    // {
+                    //     time: '07:00 PM',
+                    //     name: 'NRT1-META DCL Sneakers',
+                    //     stage: 'Undefined',
+                    // },
                     {
                         time: '09:00 PM',
                         name: 'CashLabs + Panel Talks overview',
@@ -47,11 +47,11 @@ const EventSchedule = props => {
                         name: 'MetaTokyo Zone Opening',
                         stage: 'MetaTokyo',
                     },
-                    {
-                        time: '02:00 PM',
-                        name: 'Estee Lauder',
-                        stage: 'Undefined',
-                    },
+                    // {
+                    //     time: '02:00 PM',
+                    //     name: 'Estee Lauder',
+                    //     stage: 'Undefined',
+                    // },
                     {
                         time: '03:00 PM',
                         name: 'Enter the Metaverse; Dressing our Avatars',
@@ -164,11 +164,11 @@ const EventSchedule = props => {
                         name: 'Virtual Couture; Digitizing High Fashion',
                         stage: 'CashLabs'
                     },
-                    {
-                        time: '04:00 PM',
-                        name: 'Known Origin Exhibition + DJ Set',
-                        stage: 'Undefined'
-                    },
+                    // {
+                    //     time: '04:00 PM',
+                    //     name: 'Known Origin Exhibition + DJ Set',
+                    //     stage: 'Undefined'
+                    // },
                     {
                         time: '05:00 PM',
                         name: 'The Fabricant Catwalk Show',
