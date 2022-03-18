@@ -12,6 +12,7 @@ const DaySelector = props => {
         'DAY 2',
         'DAY 3',
         'DAY 4',
+        'DAY 5',
     ];
 
     return (
@@ -20,7 +21,7 @@ const DaySelector = props => {
                 {days.map((day, index) => (
                     <Fragment key={index}>
                         <li 
-                            className={index + 1 === selectedDay && 'selected'}
+                            className={index + 1 === selectedDay ? 'selected' : undefined}
                             onClick={() => {setSelectedDay(index + 1)}}>
                             {day}
                         </li>
@@ -41,13 +42,14 @@ const StyledDaySelector = styled.section`
         li {
             margin: 0 16px;
             cursor: pointer;
+            font-family: Inter;
             color: ${props => props.theme.color.gray200};
             text-shadow: -1px 1px 0 ${props => props.theme.color.red},
                           1px 1px 0 ${props => props.theme.color.red},
                          1px -1px 0 ${props => props.theme.color.red},
                         -1px -1px 0 ${props => props.theme.color.red};
             transition: 0.15s ease-in-out all;
-            letter-spacing: 0.1em;
+            /* letter-spacing: 0.1em; */
             &:first-child {
                 margin-left: 0;
             }

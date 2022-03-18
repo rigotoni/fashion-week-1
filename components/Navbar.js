@@ -23,7 +23,7 @@ const Navbar = props => {
                             <a href="#">Agenda</a>
                         </li>
                         <li>
-                            <a href="#">Map</a>
+                            <a href="#">Zones</a>
                         </li>
                     </ul>
                 </nav>

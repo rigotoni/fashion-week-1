@@ -29,12 +29,12 @@ const EventInfo = props => {
                             <div className="floating-image floating-image-1 rellax" 
                             data-aos="fadeInUp" 
                             data-rellax-percentage="0.5" data-rellax-speed="-1">
-                                <Image src="/ClothingGreenBG.png" width={263} height={410} />
+                                <Image layout='fill' src="/ClothingArtisant.png" />
                             </div>
                             <div className="floating-image floating-image-2 rellax" 
                             data-aos="fadeInUp" 
                             data-rellax-percentage="0.5"data-rellax-speed="-2" >
-                                <Image src="/ClothingBlackBG.png" width={213} height={381} />
+                                <Image src="/Helmet.jpg" layout="fill" />
                             </div>
                             <div className="floating-image floating-image-3 rellax" 
                             data-aos="fadeInUp" 
@@ -46,15 +46,31 @@ const EventInfo = props => {
                             data-rellax-percentage="0.5" data-rellax-speed="-2" >
                                 <Image src="/ClothingBlackNeonBG.png" layout="fill" />
                             </div>
+
                             <div className="floating-image floating-image-6 rellax" 
                             data-aos="fadeInUp" 
                             data-rellax-percentage="0.5" data-rellax-speed="-2" >
-
-                                <Image src="/ClothingWhite.png" layout="fill" />
+                                <Image src="/Fashion_Killa_Galaxy_02.png" layout="fill" />
                             </div>
                             <div className="floating-image floating-image-7 rellax" 
                             data-aos="fadeInUp" 
-                            data-rellax-percentage="0.5" data-rellax-speed="-1"></div>
+                            data-rellax-percentage="0.5" data-rellax-speed="-2" />
+
+                            <div className="floating-image floating-image-8 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5" data-rellax-speed="-1" >
+                                <Image src="/watch.png" layout="fill" />
+                            </div>
+                            <div className="floating-image floating-image-9 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5" data-rellax-speed="-1" >
+                                <Image src="/jacket.png" layout="fill" />
+                            </div>
+                            <div className="floating-image floating-image-10 rellax" 
+                            data-aos="fadeInUp" 
+                            data-rellax-percentage="0.5" data-rellax-speed="-1" >
+                                <Image src="/venue.png" layout="fill" />
+                            </div>
                         </div>
                     </div>
                 </Container>
@@ -99,6 +115,7 @@ const StyledEventInfo = styled(Container)`
                     flex-direction: column;
                     .content-copy {
                         font-size: 80px;
+                        line-height: 80px;
                         .bottom-content {
                             color: ${props => props.theme.color.red}
                         }
@@ -115,7 +132,7 @@ const StyledEventInfo = styled(Container)`
                 &.floating-image-5 {
                     width: 1097px;
                     height: 770px;
-                    top: 0px;
+                    top: 100px;
                     right: -40vw;
                     z-index: 2;
                 }
@@ -148,12 +165,17 @@ const StyledEventInfo = styled(Container)`
                         box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.2);
                     }
                     .floating-image-1 {
+                        width: 280px;
+                        height: 400px;
                         top: -214px;
-                        left: -180px;
+                        left: -210px;
                     }
                     .floating-image-2 {
-                        top: 120px;
-                        left: -260px;
+                        top: 200px;
+                        left: -340px;
+                        width: 300px;
+                        height: 300px;
+                        box-shadow: none;
                     }
                     .floating-image-3 {
                         width: 395px;
@@ -175,6 +197,8 @@ const StyledEventInfo = styled(Container)`
                         top: 680px;
                         left: 0px;
                         z-index: 1;
+                        background: white;
+                        border: 3px dashed violet;
                     }
                     .floating-image-7 {
                         width: 454px;
@@ -182,6 +206,28 @@ const StyledEventInfo = styled(Container)`
                         background: linear-gradient(156.44deg, #FF6CF0 19.14%, #FEF8FF 84.82%);
                         top: 650px;
                         left: -30px;
+                        z-index: 0;
+                    }
+                    .floating-image-8 {
+                        width: 300px;
+                        height: 300px;
+                        top: -240px;
+                        left: 980px;
+                        z-index: 12;
+                        box-shadow: none;
+                    }
+                    .floating-image-9 {
+                        width: 300px;
+                        height: 300px;
+                        top: 820px;
+                        left: 1080px;
+                        z-index: 12;
+                    }
+                    .floating-image-10 {
+                        width: 800px;
+                        height: 500px;
+                        top: 1020px;
+                        left: -420px;
                         z-index: 0;
                     }
                 }
@@ -214,6 +260,15 @@ const StyledEventInfo = styled(Container)`
                     font-size: 32px;
                     letter-spacing: 0.1em;
                     padding: 12px 32px;
+                    transition: 0.1s ease-in-out all;
+                    position: relative;
+                    &:hover {
+                        background: white;
+                        color: ${props => props.theme.color.black};
+                        transform: translate(10px, -10px);
+                        border: 1px solid ${props => props.theme.color.black};
+                        box-shadow: -10px 10px 0px 0px ${props => props.theme.color.black};
+                    }
                 }
             }
         }

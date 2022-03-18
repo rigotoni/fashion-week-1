@@ -10,9 +10,9 @@ const TextBanner = props => {
                 gradient={false}
                 speed={150}
             >
-                <span>+ 60 FASHION BRANDS</span> /
-                <span>+ 500 LOOKS</span> /
-                <span>+ 4 AFTER PARTIES</span> /
+                <span>60+ FASHION BRANDS</span> /
+                <span>500+ LOOKS</span> /
+                <span>4+ AFTER PARTIES</span> /
                 <span>MANY ARTISTS</span> / 
             </Marquee>
         </StyledTextBanner>

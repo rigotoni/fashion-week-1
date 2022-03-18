@@ -12,8 +12,8 @@ const HomepageHero = props => {
     return (
         <StyledHomepageHero data-aos={dataAos} >
             <Container size={'large'} flexDirection={'column'} className={'hero-inner-container'}>
-                <span className="date">24 - 27 MARCH</span>
-                <Image src="/MVFWWhiteBg.png" alt="Metaverse Fashion Week" width={800} height={300} />
+                <span className="date">23 - 27 MARCH</span>
+                <Image src="/MVFW.png" alt="Metaverse Fashion Week" width={800} height={300} />
                 <h1>METAVERSE FASHION WEEK</h1>
                 <Countdown />
             </Container>

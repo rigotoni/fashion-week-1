@@ -9,7 +9,7 @@ import Navbar from './../components/Navbar';
 import HomepageHero from './../components/HomepageHero';
 import EventInfo from '../components/EventInfo';
 import EventSchedule from '../components/EventSchedule';
-import Map from '../components/Map';
+import Zones from '../components/Zones';
 import Footer from '../components/Footer';
 import TextBanner from '../components/TextBanner';
 import LowerBanner from '../components/LowerBanner';
@@ -43,7 +43,7 @@ export default function Home() {
 					<TextBanner />
 					<EventSchedule />
 					<LowerBanner />
-					<Map />
+					<Zones />
 				</main>
 			</StyledHome>
 
