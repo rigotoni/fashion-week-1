@@ -96,7 +96,7 @@ const Zones = props => {
                                             <div className="zone-image">
                                                 <Image objectFit={'cover'} alt={zone.name} src={'/Teleporters' + zone.imgUrl} layout="fill"/>
                                                 <div className="image-overlay">
-                                                    <span class="go-to-button" role="button">GO TO ZONE</span>
+                                                    <span className="go-to-button" role="button">GO TO ZONE</span>
                                                 </div>
                                             </div>
                                             <div className="zone-info">
