@@ -246,14 +246,14 @@ const EventSchedule = props => {
     }
 
     return (
-        <StyledEventSchedule size="full" flexDirection="column" className="schedule-info">
+        <StyledEventSchedule size="full" flexDirection="column" className="schedule-info" id="agenda">
             <Container 
                 className="schedule-container"  
                 size="large"
                 flexDirection="column"
                 >
                 <section className="schedule-header">
-                    <h2>SCHEDULE</h2>
+                    <h2>AGENDA</h2>
                     <DaySelector 
                         selectedDay={selectedDay} 
                         setSelectedDay={setSelectedDay} 

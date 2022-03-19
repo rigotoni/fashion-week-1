@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import theme from '../utils/theme';
 import Container from './Container';
 import CTA from './CTA';
+import { scrollTo } from '../utils/utils';
 
 const Navbar = props => {
 
@@ -17,13 +18,28 @@ const Navbar = props => {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">About</a>
+                            <a onClick={(e) => {
+                                e.preventDefault; 
+                                scrollTo('about')
+                            }}>
+                                About
+                            </a>
                         </li>
                         <li>
-                            <a href="#">Agenda</a>
+                        <a onClick={(e) => {
+                                e.preventDefault; 
+                                scrollTo('agenda')
+                            }}>
+                                Agenda
+                            </a>
                         </li>
                         <li>
-                            <a href="#">Zones</a>
+                        <a onClick={(e) => {
+                                e.preventDefault; 
+                                scrollTo('zones')
+                            }}>
+                                Zones
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -62,6 +78,7 @@ const StyledNavbar = styled.section`
                         color: ${props => props.theme.color.black};
                         letter-spacing: 0em;
                         position: relative;
+                        cursor: pointer;
                         &:after {
                             position: absolute;
                             content: '';

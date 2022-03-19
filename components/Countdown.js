@@ -70,6 +70,7 @@ const Countdown = props => {
 }
 
 const StyledCountdown = styled(Container)`
+    justify-content: center;
     .countdown-text {
         margin: auto 34px;
         display: block;

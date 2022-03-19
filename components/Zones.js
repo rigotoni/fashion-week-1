@@ -23,9 +23,9 @@ const Marquees = [
             imgUrl: '/Forever21.png'
         },
         {
-            name: 'Selfridges',
-            coordinate: [0,0],
-            imgUrl: '/Selfridges.png'
+            name: 'Threedium Mall',
+            coordinate: [2, 19],
+            imgUrl: '/Threedium.png'
         },
         {
             name: 'Dragon City',
@@ -40,14 +40,14 @@ const Marquees = [
     ],
     [
         {
-            name: 'Metaloop by Kollectiff',
+            name: 'Metaloop',
             coordinate: [94, -13],
             imgUrl: '/Kollectiff.png'
         },
         {
-            name: 'Threedium Mall',
-            coordinate: [2, 19],
-            imgUrl: '/Threedium.png'
+            name: 'Selfridges',
+            coordinate: [0,0],
+            imgUrl: '/Selfridges.png'
         },
         {
             name: 'Metaparty',
@@ -74,7 +74,7 @@ const Marquees = [
 
 const Zones = props => {
     return (
-        <StyledZones size="full">
+        <StyledZones size="full" id="zones">
             <Container size="full" className="zones-container" flexDirection={"column"}>
                 <Container size="large">
                     <h2>ZONES</h2>
@@ -96,7 +96,7 @@ const Zones = props => {
                                             <div className="zone-image">
                                                 <Image objectFit={'cover'} alt={zone.name} src={'/Teleporters' + zone.imgUrl} layout="fill"/>
                                                 <div className="image-overlay">
-                                                    <span className="go-to-button" role="button">GO TO ZONE</span>
+                                                    <span className="go-to-button" role="button">JUMP IN</span>
                                                 </div>
                                             </div>
                                             <div className="zone-info">
@@ -147,6 +147,7 @@ const StyledZones = styled(Container)`
                         flex-direction: column;
                         margin: 0 16px;
                         position: relative;
+                        cursor: pointer;
                         .zone-image {
                             width: 264px;
                             height: 304px;

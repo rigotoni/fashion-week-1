@@ -9,7 +9,8 @@ const Container = (props) => {
 		flexDirection,
 		children,
 		className,
-		dataAos
+		dataAos,
+		id
 	} = props;
 	return (
 		<StyledContainer 
@@ -19,6 +20,7 @@ const Container = (props) => {
 			flex={flex}
 			flexDirection={flexDirection}
 			dataAos={dataAos}
+			id={id}
 		>
 				{props.children}
 		</StyledContainer>
@@ -39,6 +41,10 @@ const StyledContainer = styled.div`
 	flex-direction: ${props => props.flexDirection};
 	margin: ${props => props.margin};
 	padding: ${props => props.padding};
+	&.full {
+		width: 100%;
+		margin: 0 auto;
+	}
 	&.large {
 		width: 1120px;
 	}

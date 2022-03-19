@@ -43,6 +43,7 @@ const StyledDaySelector = styled.section`
             margin: 0 16px;
             cursor: pointer;
             font-family: Inter;
+            text-transform: lowercase;
             color: ${props => props.theme.color.gray200};
             text-shadow: -1px 1px 0 ${props => props.theme.color.red},
                           1px 1px 0 ${props => props.theme.color.red},

@@ -108,7 +108,7 @@ const StyledDayEvents = styled.section`
                 }
             }
             &:hover {
-                border-width: 8px;
+                /* border-width: 16px; */
             }
             .time {
                 font-family: Inter;
@@ -120,13 +120,14 @@ const StyledDayEvents = styled.section`
                 /* letter-spacing: 0.1em; */
                 color: ${props => props.theme.color.gray900};
                 font-family: Inter;
-                font-weight: 600;
+                font-weight: 700;
                 margin: 12px 0;
             }
             .event-stage {
                 font-size: 24px;
                 /* letter-spacing: 0.1em; */
                 font-family: Inter;
+                font-weight: 600;
             }
         }
     }

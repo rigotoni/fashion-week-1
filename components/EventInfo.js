@@ -2,15 +2,16 @@ import styled, { keyframes } from 'styled-components';
 import theme from '../utils/theme';
 import Image from 'next/image';
 import Container from './Container';
+import ReactPlayer from 'react-player';
 
 const EventInfo = props => {
     return (
-        <StyledEventInfo size="full" flexDirection="column" className="event-info">
+        <StyledEventInfo id="about" size="full" flexDirection="column" className="event-info">
             <Container className="event-info-heading" size="full">
                 <strong className="main-heading">GET A FRONT ROW SEAT<br/>AT THE CATWALK</strong>
             </Container>
-            <Container className="event-info-body" size="full" flexDirection="column">
-                <Container className="info-row" size="full" flexDirection="column">
+            <Container className="event-info-body" size="large" flexDirection="column">
+                <Container className="info-row" size="large" flexDirection="column">
                     <div className="floating-content">
                         {/* <div className="floating-image floating-image-5 rellax" data-rellax-percentage="0.5"data-rellax-speed="-2" data-aos="fadeInUp">
                             <Image src="/Shoe.png" layout="fill" />
@@ -21,7 +22,7 @@ const EventInfo = props => {
                             <div className="event-info-content" data-aos="fadeInUp">
                                 <h2>EVERYONE'S A<br/> V.I.P IN THE METAVERSE</h2>
                                 <p>
-                                DIVE INTO FOUR DAYS OF RUNWAY SHOWS, AFTER PARTIES, SHOPPING, AND PANEL TALKS. 
+                                DIVE INTO FOUR DAYS OF RUNWAY SHOWS,<br/> AFTER PARTIES, SHOPPING, AND PANEL TALKS. 
                                 </p>
                                 <a className="info-cta" href="#">
                                     Learn More
@@ -32,7 +33,7 @@ const EventInfo = props => {
                                 <div className="floating-image floating-image-1 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-1">
-                                    <Image layout='fill' src="/ClothingArtisant.png" />
+                                    <Image layout='fill' src="/Fashion_Killa_Galaxy_02.png" />
                                 </div>
                                 <div className="floating-image floating-image-2 rellax" 
                                 data-aos="fadeInUp" 
@@ -53,7 +54,7 @@ const EventInfo = props => {
                                 <div className="floating-image floating-image-6 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-2" >
-                                    <Image src="/Fashion_Killa_Galaxy_02.png" layout="fill" />
+                                    <Image src="/ClothingArtisant.png" layout="fill" />
                                 </div>
                                 <div className="floating-image floating-image-7 rellax" 
                                 data-aos="fadeInUp" 
@@ -73,6 +74,21 @@ const EventInfo = props => {
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-1" >
                                     <Image src="/venue.png" layout="fill" />
+                                </div>
+                                <div className="floating-image floating-image-11 rellax" 
+                                data-aos="fadeInUp" 
+                                data-rellax-percentage="0.5" data-rellax-speed="-1" >
+                                    <ReactPlayer url="/Vogu.mp4" playing muted loop />
+                                </div>
+                                <div className="floating-image floating-image-12 rellax" 
+                                data-aos="fadeInUp" 
+                                data-rellax-percentage="0.5" data-rellax-speed="-1" >
+                                    <Image src="/hat.png" layout="fill" />
+                                </div>
+                                <div className="floating-image floating-image-13 rellax" 
+                                data-aos="fadeInUp" 
+                                data-rellax-percentage="0.5" data-rellax-speed="-1" >
+                                    <Image src="/voguShoes.png" layout="fill" />
                                 </div>
                             </div>
                         </div>
@@ -105,18 +121,20 @@ const stripedCircleRotate = keyframes`
 
 const StyledEventInfo = styled(Container)`
     .event-info-heading {
-        padding: 80px 0;
-        /* background: black; */
+        padding: 120px 0;
+        background-image: url('/catwalk.png');
         position: relative;
+        width: 100%;
+        margin-bottom: 200px;
+        justify-content: center;
+        color: white;
+        background-position: center;
         .main-heading {
             font-size: 106px;
-            /* position: absolute; */
-            /* width: 1000px;; */
-            /* left: 100px; */
-            padding-bottom: 400px;
             text-align: center;
             letter-spacing: 0.1em;
             color: ${props => props.theme.black};
+            text-shadow: 0 0 10px rgba(0,0,0,0.3)
         }
     }
     .event-info-body {
@@ -136,9 +154,7 @@ const StyledEventInfo = styled(Container)`
                         .content-copy {
                             font-size: 80px;
                             line-height: 80px;
-                            .bottom-content {
-                                color: ${props => props.theme.color.red}
-                            }
+                            letter-spacing: 0.075em;
                         }
                     }
                     .info-cta {
@@ -185,10 +201,11 @@ const StyledEventInfo = styled(Container)`
                             box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.2);
                         }
                         .floating-image-1 {
-                            width: 280px;
+                            width: 400px;
                             height: 400px;
-                            top: -214px;
-                            left: -210px;
+                            top: -200px;
+                            left: -280px;
+                            box-shadow: none;
                         }
                         .floating-image-2 {
                             top: 200px;
@@ -213,12 +230,12 @@ const StyledEventInfo = styled(Container)`
                         }
                         .floating-image-6 {
                             width: 454px;
-                            height: 454px;
+                            height: 600px;
                             top: 680px;
                             left: 0px;
                             z-index: 1;
                             background: white;
-                            border: 3px dashed violet;
+                            /* border: 3px dashed violet; */
                         }
                         .floating-image-7 {
                             width: 454px;
@@ -232,7 +249,7 @@ const StyledEventInfo = styled(Container)`
                             width: 300px;
                             height: 300px;
                             top: -240px;
-                            left: 980px;
+                            left: 560px;
                             z-index: 12;
                             box-shadow: none;
                         }
@@ -249,6 +266,30 @@ const StyledEventInfo = styled(Container)`
                             top: 1020px;
                             left: -420px;
                             z-index: 0;
+                        }
+                        .floating-image-11 {
+                            width: 300px;
+                            height: 300px;
+                            top: 540px;
+                            left: 420px;
+                            z-index: 0;
+                            box-shadow: none;
+                            filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
+                        }
+                        .floating-image-12 {
+                            width: 320px;
+                            height: 320px;
+                            top: 1180px;
+                            left: 820px;
+                            z-index: 0;
+                        }
+                        .floating-image-13 {
+                            width: 820px;
+                            height: 400px;
+                            top: 1220px;
+                            left: 320px;
+                            z-index: 2;
+                            box-shadow: none;
                         }
                     }
                 }
