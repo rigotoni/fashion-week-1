@@ -8,6 +8,7 @@ const EventInfo = props => {
     return (
         <StyledEventInfo id="about" size="full" flexDirection="column" className="event-info">
             <Container className="event-info-heading" size="full">
+                <div className="image-overlay"></div>
                 <strong className="main-heading">GET A FRONT ROW SEAT<br/>AT THE CATWALK</strong>
             </Container>
             <Container className="event-info-body" size="large" flexDirection="column">
@@ -129,12 +130,23 @@ const StyledEventInfo = styled(Container)`
         justify-content: center;
         color: white;
         background-position: center;
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background: rgba(0,0,0,0.4);
+        }
         .main-heading {
             font-size: 106px;
             text-align: center;
             letter-spacing: 0.1em;
             color: ${props => props.theme.black};
-            text-shadow: 0 0 10px rgba(0,0,0,0.3)
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 2;
         }
     }
     .event-info-body {
@@ -257,7 +269,7 @@ const StyledEventInfo = styled(Container)`
                             width: 300px;
                             height: 300px;
                             top: 820px;
-                            left: 1080px;
+                            left: 1120px;
                             z-index: 12;
                         }
                         .floating-image-10 {

@@ -193,18 +193,23 @@ const StyledZones = styled(Container)`
                             .coordinate {
                                 color: white;
                                 font-family: inter;
-                                margin-top: 4px;
+                                margin-top: 8px;
                                 display: flex;
                                 align-items: center;
                                 font-size: 14px;
+                                background: slateblue;
+                                width: fit-content;
+                                padding: 0 12px;
+                                border-radius: 20px;
+                                height: 28px;
                                 .icon {
-                                    color: slateblue;
-                                    font-size: 24px;
+                                    /* color: slateblue; */
+                                    font-size: 18px;
                                 }
                                 span {
                                     margin-left: 8px;
                                     line-height: 20px;
-                                    opacity: 0.5;
+                                    opacity: 0.7;
                                     font-weight: 600;
                                 }
                             }
