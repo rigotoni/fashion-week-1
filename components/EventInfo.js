@@ -347,6 +347,100 @@ const StyledEventInfo = styled(Container)`
             }
         }
     }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        .event-info-heading {
+            margin-bottom: 80px;
+            .main-heading {
+                font-size: 60px;
+            }
+        }
+        .event-info-body {
+            .info-row {
+                .floating-content {
+                    /* display: none; */
+                }
+                .info-block {
+                    width: 100%;
+                    margin-bottom: 120px;
+                    &:first-child {
+                        .relative-floating-content {
+                            & > div {
+                                display: none;
+                            }
+                            /* .floating-image-1 {
+                                display: block;
+                                top: 420px;
+                                left: 180px;
+                                width: 200px;
+                                height: 200px;
+                                z-index: 10;
+                            }
+                            .floating-image-2 {
+                                display: block;
+                                top: 400px;
+                                left: 0px;
+                                width: 150px;
+                                height: 150px;
+                            }
+                            .floating-image-3 {
+                                display: block;
+                                top: 470px;
+                                left: unset;
+                                right: -120px;
+                                width: 200px;
+                                height: 200px;
+                            }
+                            .floating-image-6 {
+                                display: block;
+                                top: 470px;
+                                left: -100px;
+                                width: 200px;
+                                height: 260px;
+                            } */
+                            /* .floating-image-10 {
+                                display: block;
+                                top: 470px;
+                                left: 0px;
+                                width: 360px;
+                                height: 260px;
+                            } */
+                        }
+                    }
+                    .event-info-content {
+                        h2 {
+                            font-size: 48px;
+                            padding-left: 0;
+                            line-height: 48px;
+                        }
+                        p {
+                            font-size: 24px;
+                            line-height: 40px;
+                        }
+                        .info-cta {
+                            font-size: 24px;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    .info-block {
+                        margin-bottom: 80px;
+                        .event-info-content {
+                            display: flex;
+                            flex-direction: column;
+                            .content-copy {
+                                font-size: 40px;
+                                line-height: 40px;
+                                letter-spacing: 0.075em;
+                            }
+                        }
+                        .info-cta {
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
 `;
 
 export default EventInfo;

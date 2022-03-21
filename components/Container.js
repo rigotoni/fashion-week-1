@@ -51,6 +51,12 @@ const StyledContainer = styled.div`
 	&.medium {
 		width: 920px;
 	}
+	@media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+		&.large {
+			max-width: calc(100vw - 40px) !important;
+			width: 100% !important;
+		}
+	}
 `;
 
 export default Container;

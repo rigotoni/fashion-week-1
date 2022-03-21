@@ -77,6 +77,24 @@ const StyledHomepageHero = styled.section`
             font-weight: 200;
         }
     }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        .down-arrows {
+            transform: scale(0.5);
+        }
+        .hero-inner-container {
+            padding-top: 0px;
+            min-height: unset;
+            height: unset;
+            .date {
+                font-size: 32px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 40px;
+                line-height: 42px;
+            }
+        }
+    }
 `;
 
 export default HomepageHero;

@@ -131,6 +131,19 @@ const StyledDayEvents = styled.section`
             }
         }
     }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        padding-left: 0;
+        ul {
+            li {
+                .event-name {
+                    font-size: 24px;
+                } 
+                .event-stage {
+                    font-size: 18px;
+                } 
+            }
+        }
+    }
 `;
 
 export default DayEvents;

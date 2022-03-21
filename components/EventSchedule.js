@@ -21,11 +21,11 @@ const EventSchedule = props => {
                         name: 'Selfridges Opening',
                         stage: 'Independent Stores',
                     },
-                    // {
-                    //     time: '07:00 PM',
-                    //     name: 'NRT1-META DCL Sneakers',
-                    //     stage: 'Undefined',
-                    // },
+                    {
+                        time: '07:00 PM',
+                        name: 'NRT1-META DCL Sneakers',
+                        stage: 'Independent Stores',
+                    },
                     {
                         time: '09:00 PM',
                         name: 'CashLabs + Panel Talks overview',
@@ -35,6 +35,11 @@ const EventSchedule = props => {
                         time: '11:00 PM',
                         name: 'Introducing Sophia The Robot',
                         stage: 'Luxury Area',
+                    },
+                    {
+                        time: '00:00 AM',
+                        name: 'D-CAVE',
+                        stage: 'Independent Stores',
                     },
                 ]   
             }
@@ -47,11 +52,11 @@ const EventSchedule = props => {
                         name: 'MetaTokyo Zone Opening',
                         stage: 'MetaTokyo',
                     },
-                    // {
-                    //     time: '02:00 PM',
-                    //     name: 'Estee Lauder',
-                    //     stage: 'Undefined',
-                    // },
+                    {
+                        time: '02:00 PM',
+                        name: 'Known Origin Exhibition + DJ Set 6pm GMT',
+                        stage: 'Independent Stores',
+                    },
                     {
                         time: '03:00 PM',
                         name: 'Enter the Metaverse; Dressing our Avatars',
@@ -64,7 +69,7 @@ const EventSchedule = props => {
                     },
                     {
                         time: '05:00 PM',
-                        name: 'D&G +UNXD Opening Party',
+                        name: 'D&G Catwalk',
                         stage: 'Luxury Area',
                     },
                     {
@@ -105,13 +110,13 @@ const EventSchedule = props => {
                     },
                     {
                         time: '03:00 PM',
-                        name: 'Creating Fashion outside the confines of Reality',
-                        stage: 'Luxury Area'
+                        name: 'Etro (UNXD) Catwalk Show',
+                        stage: 'CashLabs'
                     },
                     {
                         time: '04:00 PM',
-                        name: 'Etro (UNXD) Catwalk Show',
-                        stage: 'CashLabs'
+                        name: 'Creating Fashion outside the confines of Reality',
+                        stage: 'Luxury Area'
                     },
                     {
                         time: '05:00 PM',
@@ -164,19 +169,19 @@ const EventSchedule = props => {
                         name: 'Virtual Couture; Digitizing High Fashion',
                         stage: 'CashLabs'
                     },
-                    // {
-                    //     time: '04:00 PM',
-                    //     name: 'Known Origin Exhibition + DJ Set',
-                    //     stage: 'Undefined'
-                    // },
+                    {
+                        time: '04:00 PM',
+                        name: 'Known Origin Exhibition + DJ Set',
+                        stage: 'Independent Stores'
+                    },
                     {
                         time: '05:00 PM',
-                        name: 'The Fabricant Catwalk Show',
+                        name: 'Fresh Couture Catwalk Show',
                         stage: 'Luxury Area'
                     },
                     {
                         time: '06:00 PM',
-                        name: 'Fresh Couture Catwalk Show',
+                        name: 'Placebo Show',
                         stage: 'Luxury Area'
                     },
                     {
@@ -186,7 +191,7 @@ const EventSchedule = props => {
                     },
                     {
                         time: '08:00 PM',
-                        name: 'Creating Fashion Imagery',
+                        name: 'Sustainability & Fashion',
                         stage: 'CashLabs'
                     },
                     {
@@ -202,12 +207,17 @@ const EventSchedule = props => {
                 events: [
                     {
                         time: '03:00 PM',
+                        name: 'Estee Lauder',
+                        stage: 'Independent Stores'
+                    },
+                    {
+                        time: '03:00 PM',
                         name: 'Opening Party: Faith Connexion & Bloondish ',
                         stage: 'Independent Stores'
                     },
                     {
                         time: '04:00 PM',
-                        name: 'Sustainability & Fashion',
+                        name: 'The History & Future of Virtual Fashion',
                         stage: 'CashLabs'
                     },
                     {
@@ -217,7 +227,7 @@ const EventSchedule = props => {
                     },
                     {
                         time: '06:00 PM',
-                        name: 'Placebo Catwalk Show',
+                        name: 'The Fabricant Show',
                         stage: 'Luxury Area'
                     },
                     {
@@ -232,8 +242,8 @@ const EventSchedule = props => {
                     },
                     {
                         time: '09:00 PM',
-                        name: 'The History & Future of Virtual Fashion',
-                        stage: 'CashLabs'
+                        name: 'PangeaDAO',
+                        stage: 'Independent Stores'
                     },
                     {
                         time: '10:00 PM',
@@ -302,6 +312,28 @@ const StyledEventSchedule = styled(Container)`
                 top: 0px;
                 color: ${props => props.theme.color.red};
                 min-width: 400px;
+            }
+        }
+    }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        .schedule-container {
+            padding: 40px 0;
+            .schedule-header {
+                h2 {
+                    font-size: 48px;
+                    position: relative;
+                    padding-left: 0;
+                    transform: unset;
+                }
+                .day-selector {
+                    top: 0;
+                    left: 0;
+                }
+                .full-date {
+                    left: 0;
+                    font-size: 64px;
+                    margin-top: 40px;
+                }
             }
         }
     }

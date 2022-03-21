@@ -29,6 +29,10 @@ const StyledCTA = styled.a`
         border: 1px solid ${props => props.theme.color.black};
         box-shadow: -10px 10px 0px 0px ${props => props.theme.color.black};
     }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        font-size: 20px;
+        padding: 16px 24px;
+    }
 `;
 
 export default CTA;

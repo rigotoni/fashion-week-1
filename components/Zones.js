@@ -94,7 +94,7 @@ const Zones = props => {
                                     <li key={index} className={zone.name.replace(' ', '-')}>
                                         <a href={`https://play.decentraland.org/?position=${zone.coordinate[0]}%2C${zone.coordinate[1]}`}>
                                             <div className="zone-image">
-                                                <Image objectFit={'cover'} alt={zone.name} src={'/Teleporters' + zone.imgUrl} layout="fill"/>
+                                                <Image objectFit={'contain'} alt={zone.name} src={'/Teleporters' + zone.imgUrl} layout="fill"/>
                                                 <div className="image-overlay">
                                                     <span className="go-to-button" role="button">JUMP IN</span>
                                                 </div>
@@ -217,6 +217,42 @@ const StyledZones = styled(Container)`
                         &:hover {
                             .image-overlay {
                                 opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        .zones-container {
+            padding: 40px 0;
+            h2 {
+                font-size: 40px;
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+            }
+            .marquee-wrapper {
+                .marquee-component {
+                    .zone-list {
+
+                        li {
+                            margin: 0 12px;
+                            .zone-image {
+                                width: 180px;
+                                height: 240px;
+                                margin-bottom: 0;
+                                .image-overlay {
+                                    display: none;
+                                }
+                            }
+                            .zone-info {
+                                width: 180px;
+                                h3 {
+                                    font-size: 24px;
+                                    margin-bottom: 8px;
+                                }
                             }
                         }
                     }

@@ -29,6 +29,10 @@ const StyledTextBanner = styled(Container)`
         letter-spacing: 0.05em;
         color: ${props => props.theme.color.black};
     }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        height: 64px;
+        font-size: 32px;
+    }
 `;
 
 export default TextBanner;

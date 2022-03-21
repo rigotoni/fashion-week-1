@@ -12,25 +12,25 @@ const Footer = props => {
                             <li>
                                 <a href="#">FAQ</a>
                             </li>
-                            /
+                            <span className="separator">/</span>
                             <li>
                                 <a href="#">Contact Form</a>
                             </li>
-                            /
+                            <span className="separator">/</span>
                             <li>
                                 <a href="#">Press</a>
                             </li>
-                            /
+                            <span className="separator">/</span>
                             <li>
                                 <a href="#">Privacy Policy</a>
                             </li>
-                            /
+                            <span className="separator">/</span>
                             <li>
                                 <a href="#">Code of Ethics</a>
                             </li>
                         </ul>
                     </div>
-                    <div className="footer-links">
+                    <div className="footer-links social-icons">
                         <ul>
                             <li>
                                 <a href="#">
@@ -116,6 +116,43 @@ const StyledFooter = styled.footer`
         opacity: 0.7;
         font-size: 12px; 
     }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        .footer-content {
+            .footer-top-content {
+                flex-direction: column;
+                .footer-links {
+                    width: 100%;
+                    ul {
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: unset;
+                        li {
+                            margin: 0;
+                            padding: 0;
+                            margin-bottom: 8px;
+                            text-align: center;
+                        }
+                        .separator {
+                            display: none;
+                        }
+                    }
+                }
+                .social-icons {
+                    margin-top: 40px;
+                    display: flex;
+                    justify-content: center;
+                    ul {
+                        flex-direction: row;
+                        width: unset;
+                        li {
+                            margin: 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+	}
 `;
 
 export default Footer;

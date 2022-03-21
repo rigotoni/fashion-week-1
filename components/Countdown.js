@@ -106,6 +106,16 @@ const StyledCountdown = styled(Container)`
             }
         }
     }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+        flex-direction: column;
+        align-items: center;
+        .cta {
+            margin-bottom: 12px;
+        }
+        .countdown {
+            margin-top: 12px;
+        }
+    }
 
 `
 

@@ -25,7 +25,9 @@ const DaySelector = props => {
                             onClick={() => {setSelectedDay(index + 1)}}>
                             {day}
                         </li>
-                        {index < days.length - 1 && ' / '}
+                        <span className="separator">
+                            {index < days.length - 1 && ' / '}
+                        </span>
                     </Fragment>
                 ))}
             </ul>
@@ -62,6 +64,20 @@ const StyledDaySelector = styled.section`
                 text-shadow: none;
             }
         }
+    }
+    @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+       ul {
+           font-size: 24px;
+           flex-wrap: wrap;
+           li {
+               white-space: nowrap;
+               margin: 0;
+            }
+            .separator {
+                margin: 0 12px;
+                display: inline-block;
+            }
+       }
     }
 `;
 

@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import styled from 'styled-components';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 import Rellax from 'rellax';
 
 import Navbar from './../components/Navbar';
@@ -17,7 +17,7 @@ import LowerBanner from '../components/LowerBanner';
 export default function Home() {
 
 	useEffect(() => {
-		Aos.init();
+		// Aos.init();
 		new Rellax('.rellax', {
 			speed: -2,
 			center: true,
@@ -31,7 +31,7 @@ export default function Home() {
 			<Head>
 				<title>Metaverse Fashion Week | Decentraland</title>
 				<meta name="description" content="Get a front row seat at the catwalk" />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.svg" />
 			</Head>
 			<StyledHome>
 				<header>
@@ -61,5 +61,10 @@ const StyledHome = styled.main`
 		min-height: 980px;
 		/* margin-bottom: 320px; */
 		padding-top: 120px;
+	}
+	@media screen and (max-width: ${props => props.theme.breakpoints.m}) {
+		header {
+			min-height: 760px;
+		}
 	}
 `;
