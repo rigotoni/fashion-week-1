@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Container from './Container';
 import DaySelector from './DaySelector';
 import DayEvents from './DayEvents';
+import Link from 'next/link';
+import CTA from './CTA';
 
 const EventSchedule = props => {
 
@@ -84,7 +86,7 @@ const EventSchedule = props => {
                     },
                     {
                         time: '08:00 PM',
-                        name: 'Phillip Plain Runway + Night Party',
+                        name: 'Phillip Plein Runway + Night Party',
                         stage: 'Luxury Area',
                     },
                     {
@@ -170,11 +172,6 @@ const EventSchedule = props => {
                         stage: 'CashLabs'
                     },
                     {
-                        time: '04:00 PM',
-                        name: 'Known Origin Exhibition + DJ Set',
-                        stage: 'Independent Stores'
-                    },
-                    {
                         time: '05:00 PM',
                         name: 'Fresh Couture Catwalk Show',
                         stage: 'Luxury Area'
@@ -207,12 +204,12 @@ const EventSchedule = props => {
                 events: [
                     {
                         time: '03:00 PM',
-                        name: 'Estee Lauder',
+                        name: 'Estée Lauder',
                         stage: 'Independent Stores'
                     },
                     {
                         time: '03:00 PM',
-                        name: 'Opening Party: Faith Connexion & Bloondish ',
+                        name: 'Opening Party: Faith Connexion & Blond:ish ',
                         stage: 'Independent Stores'
                     },
                     {
@@ -256,7 +253,7 @@ const EventSchedule = props => {
     }
 
     return (
-        <StyledEventSchedule size="full" flexDirection="column" className="schedule-info" id="agenda">
+        <StyledEventSchedule size="full" flexDirection="column" className="schedule-info" id="full-schedule">
             <Container 
                 className="schedule-container"  
                 size="large"
@@ -264,17 +261,28 @@ const EventSchedule = props => {
                 >
                 <section className="schedule-header">
                     <h2>AGENDA</h2>
-                    <DaySelector 
-                        selectedDay={selectedDay} 
-                        setSelectedDay={setSelectedDay} 
-                    />
-                    <span className="full-date">
-                        {selectedDay === 1 && 'MARCH 23'}
-                        {selectedDay === 2 && 'MARCH 24'}
-                        {selectedDay === 3 && 'MARCH 25'}
-                        {selectedDay === 4 && 'MARCH 26'}
-                        {selectedDay === 5 && 'MARCH 27'}
-                    </span>
+                    <div className="day-selector-area">
+                        <DaySelector 
+                            selectedDay={selectedDay} 
+                            setSelectedDay={setSelectedDay} 
+                        />
+                        {/* <span className="full-schedule-link">
+                            <Link href="/full-schedule" >
+                            </Link>
+                        </span> */}
+                    </div>
+                    <div className="full-date-area">
+                        <span className="full-date">
+                            {selectedDay === 1 && 'MARCH 23'}
+                            {selectedDay === 2 && 'MARCH 24'}
+                            {selectedDay === 3 && 'MARCH 25'}
+                            {selectedDay === 4 && 'MARCH 26'}
+                            {selectedDay === 5 && 'MARCH 27'}
+                        </span>
+                        <CTA href="/full-schedule">
+                                View full schedule
+                        </CTA>
+                    </div>
                 </section>
                 <DayEvents selectedDayData={scheduleData['DAY ' + selectedDay]}/>
             </Container>
@@ -290,6 +298,40 @@ const StyledEventSchedule = styled(Container)`
         .schedule-header {
             display: flex;
             flex-direction: column;
+            .day-selector-area {
+                display: flex;
+                width: 100%;
+                top: -11px;
+                left: 120px;
+                position: relative;
+                align-items: flex-end;
+                .full-schedule-link {
+                    font-family: Inter;
+                }
+                
+            }
+            .full-date-area {
+                position: relative;
+                top: 0px;
+                left: 120px;
+                display: flex;
+                align-items: center;
+                .cta {
+                    height: 84px;
+                    /* padding: 0 16px; */
+                    /* line-height: 80px; */
+                    margin-left: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 40px;
+                }
+                .full-date {
+                    font-size: 116px;
+                    color: ${props => props.theme.color.red};
+                    min-width: 400px;
+                }
+            }
             h2 {
                 font-size: 120px;
                 line-height: 68px;
@@ -299,19 +341,6 @@ const StyledEventSchedule = styled(Container)`
                 margin-bottom: 20px;
                 position: absolute;
                 transform: rotate(-90deg) translate(-264px, -280px);
-            }
-            .day-selector {
-                position: relative;
-                top: -11px;
-                left: 120px;
-            }
-            .full-date {
-                font-size: 116px;
-                left: 120px;
-                position: relative;
-                top: 0px;
-                color: ${props => props.theme.color.red};
-                min-width: 400px;
             }
         }
     }
@@ -330,6 +359,7 @@ const StyledEventSchedule = styled(Container)`
                     left: 0;
                 }
                 .full-date {
+                    letter-spacing: 0.05em;
                     left: 0;
                     font-size: 64px;
                     margin-top: 40px;

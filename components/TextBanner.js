@@ -32,6 +32,9 @@ const StyledTextBanner = styled(Container)`
     @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
         height: 64px;
         font-size: 32px;
+        span {
+            margin: 0 20px;
+        }
     }
 `;
 

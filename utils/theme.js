@@ -8,6 +8,7 @@ const theme = {
         gray200: '#F3F3F3',
         blue: '#2b31e0',
         red: '#F62E2E',
+        darkRed: '#a31f1f',
         cream: '#F7F2EC'
     },
     breakpoints: {

@@ -26,8 +26,8 @@ const Navbar = props => {
                             <a onClick={(e) => {
                                 e.preventDefault; 
                                 setIsMobileOpen(false);
-                                scrollTo('about')
-                            }}>
+                            }}
+                            href={'/#about'}>
                                 About
                             </a>
                         </li>
@@ -35,17 +35,17 @@ const Navbar = props => {
                         <a onClick={(e) => {
                                 e.preventDefault; 
                                 setIsMobileOpen(false);
-                                scrollTo('agenda')
-                            }}>
-                                Agenda
+                            }}
+                            href={'/#full-schedule'}>
+                                Full Schedule
                             </a>
                         </li>
                         <li>
                         <a onClick={(e) => {
                                 e.preventDefault;
                                 setIsMobileOpen(false); 
-                                scrollTo('zones')
-                            }}>
+                            }}
+                            href={'/#zones'}>
                                 Zones
                             </a>
                         </li>
@@ -174,9 +174,9 @@ const StyledNavbar = styled.section`
                     flex-direction: column;
                     position: absolute;
                     top: 100vh;
-                    left: -12px;
+                    left: -20px;
                     background: white;
-                    width: calc(100% + 24px);
+                    width: calc(100% + 40px);
                     height: calc(100vh - 80px);
                     align-items: flex-start;
                     align-items: center;

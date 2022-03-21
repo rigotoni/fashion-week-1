@@ -228,13 +228,16 @@ const StyledZones = styled(Container)`
         .zones-container {
             padding: 40px 0;
             h2 {
-                font-size: 40px;
+                font-size: 48px;
                 text-align: center;
                 display: inline-block;
                 width: 100%;
             }
             .marquee-wrapper {
                 .marquee-component {
+                    .overlay {
+                        display: none;
+                    }
                     .zone-list {
 
                         li {
