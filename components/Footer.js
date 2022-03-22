@@ -10,42 +10,42 @@ const Footer = props => {
                     <div className="footer-links">
                         <ul>
                             <li>
-                                <a href="https://decentraland.org/terms" target="_blank">Terms of Use</a>
+                                <a href="https://decentraland.org/terms" target="_blank" rel="noreferrer">Terms of Use</a>
                             </li>
                             <span className="separator">/</span>
                             <li>
-                                <a href="https://decentraland.org/content" target="_blank">Content Policy</a>
+                                <a href="https://decentraland.org/content" target="_blank" rel="noreferrer">Content Policy</a>
                             </li>
                             <span className="separator">/</span>
                             <li>
-                                <a href="https://decentraland.org/ethics" target="_blank">Code of Ethics</a>
+                                <a href="https://decentraland.org/ethics" target="_blank" rel="noreferrer">Code of Ethics</a>
                             </li>
                         </ul>
                     </div>
                     <div className="footer-links social-icons">
                         <ul>
                             <li>
-                                <a target="_blank" href="https://decentraland.org/discord/">
+                                <a target="_blank" href="https://decentraland.org/discord/" rel="noreferrer">
                                     <FaDiscord/>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://github.com/decentraland">
+                                <a target="_blank" href="https://github.com/decentraland" rel="noreferrer">
                                     <FaGithub/>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.reddit.com/r/decentraland/">
+                                <a target="_blank" href="https://www.reddit.com/r/decentraland/" rel="noreferrer">
                                     <FaRedditAlien/>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://twitter.com/decentraland?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                <a target="_blank" href="https://twitter.com/decentraland?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" rel="noreferrer">
                                     <FaTwitter/>    
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.instagram.com/decentraland_foundation/?hl=en">
+                                <a target="_blank" href="https://www.instagram.com/decentraland_foundation/?hl=en" rel="noreferrer">
                                     <FaInstagram/>
                                 </a>
                             </li>
