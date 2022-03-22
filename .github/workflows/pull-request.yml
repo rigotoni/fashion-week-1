@@ -1,12 +1,15 @@
-name: release
+name: pull-request
 
 on:
-  push:
+  pull_request:
     branches:
       - master
+    types:
+      - opened
+      - synchronize
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-20.04
 
     steps:
@@ -24,12 +27,4 @@ jobs:
       - name: building
         run: yarn build
         env:
-          NEXT_PUBLIC_SEGMENT_KEY: 'julsNQhiodZFvdOZTXrrPiKmwX4CkHoa'
-
-      - name: publishing documents
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./out
-          CNAME: mvfw.org
+          NEXT_PUBLIC_SEGMENT_KEY: '00000000000000000'
