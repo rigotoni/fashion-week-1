@@ -1,19 +1,19 @@
 import { Fragment } from "react";
 import styled from "styled-components";
 
+const days = [
+    'DAY 1',
+    'DAY 2',
+    'DAY 3',
+    'DAY 4',
+    'DAY 5',
+];
+
 const DaySelector = props => {
     const {
         selectedDay,
         setSelectedDay
     } = props;
-
-    const days = [
-        'DAY 1',
-        'DAY 2',
-        'DAY 3',
-        'DAY 4',
-        'DAY 5',
-    ];
 
     return (
         <StyledDaySelector className="day-selector">
