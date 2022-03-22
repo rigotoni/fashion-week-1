@@ -169,6 +169,11 @@ const scheduleData = {
                 },
                 {
                     time: '05:00 PM GMT',
+                    name: 'Vogu & Hype Catwalk Show',
+                    stage: 'Luxury Area'
+                },
+                {
+                    time: '06:00 PM GMT',
                     name: 'Fresh Couture Catwalk Show',
                     stage: 'Luxury Area'
                 },
@@ -212,11 +217,6 @@ const scheduleData = {
                     time: '04:00 PM GMT',
                     name: 'The History & Future of Virtual Fashion',
                     stage: 'CashLabs'
-                },
-                {
-                    time: '05:00 PM GMT',
-                    name: 'Vogu & Hype Catwalk Show',
-                    stage: 'Luxury Area'
                 },
                 {
                     time: '06:00 PM GMT',

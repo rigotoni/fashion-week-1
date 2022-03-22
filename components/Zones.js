@@ -45,7 +45,7 @@ const Marquees = [
         },
         {
             name: 'Selfridges',
-            coordinate: [0,0],
+            coordinate: [64, 13],
             imgUrl: '/Selfridges.png'
         },
         {
