@@ -509,7 +509,7 @@ export default function Home() {
                                 {timeslots.map((timeslot) => (
                                     <div key={timeslot} className="hour-row">
                                         <div className="time">
-                                            {timeslot - 12}pm
+                                            {timeslot - 12}pm <br/>GMT
                                         </div>
                                         <div className="events">
                                             {Schedule.map((day) => (
@@ -609,12 +609,13 @@ const StyledHome = styled.main`
                     font-family: Inter;
                     font-weight: 600;
                     position: relative;
-                    top: -16px;
+                    top: -24px;
+                    text-align: center;
                     /* border-right: 1px solid lightgray; */
                     &:after {
                         content: '';
                         position: absolute;
-                        top: 10px;
+                        top: 17px;
                         right: -6px;
                         width: 12px;
                         height: 12px;

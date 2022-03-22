@@ -18,7 +18,9 @@ const Navbar = props => {
     return (
         <StyledNavbar className={`${isMobileOpen ? 'mobile-open' : ''}`}>
             <Container dataAos={dataAos} size={'large'} className={'navbar-inner-container'}>
-                <NextImage className="logo" src="/NavbarLogo.png" alt="Decentraland" width={167} height={42} />
+                <a href="/">
+                    <NextImage className="logo" src="/NavbarLogo.png" alt="Decentraland" width={167} height={42} />
+                </a>
                 <nav>
                     <ul>
                         <li>
