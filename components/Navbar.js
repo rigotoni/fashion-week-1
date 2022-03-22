@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import NextImage from './NextImage';
 import styled from 'styled-components';
 import Container from './Container';
 import { scrollTo } from '../utils/utils';
@@ -19,7 +19,7 @@ const Navbar = props => {
     return (
         <StyledNavbar className={`${isMobileOpen ? 'mobile-open' : ''}`}>
             <Container dataAos={dataAos} size={'large'} className={'navbar-inner-container'}>
-                <Image className="logo" src="/NavbarLogo.png" alt="Decentraland" width={167} height={42} />
+                <NextImage className="logo" src="/NavbarLogo.png" alt="Decentraland" width={167} height={42} />
                 <nav>
                     <ul>
                         <li>

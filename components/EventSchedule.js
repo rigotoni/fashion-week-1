@@ -325,6 +325,8 @@ const StyledEventSchedule = styled(Container)`
                     align-items: center;
                     justify-content: center;
                     font-size: 40px;
+                    position: relative;
+                    top: -2px;
                 }
                 .full-date {
                     font-size: 116px;

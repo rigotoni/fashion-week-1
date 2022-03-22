@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import Image from 'next/image';
+import NextImage from './NextImage';
 import Container from './Container';
 import Countdown from './Countdown';
 
@@ -13,7 +13,7 @@ const HomepageHero = props => {
         <StyledHomepageHero data-aos={dataAos} >
             <Container size={'large'} flexDirection={'column'} className={'hero-inner-container'}>
                 <span className="date">23 - 27 MARCH</span>
-                <Image src="/MVFW.png" alt="Metaverse Fashion Week" width={800} height={300} />
+                <NextImage src="/MVFW.png" alt="Metaverse Fashion Week" width={800} height={300} />
                 <h1>METAVERSE FASHION WEEK</h1>
                 <Countdown />
                 <div className="down-arrows">

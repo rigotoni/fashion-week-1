@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 import theme from '../utils/theme';
-import Image from 'next/image';
 import Container from './Container';
 import ReactPlayer from 'react-player';
+import NextImage from './NextImage'
 
 const EventInfo = props => {
     return (
@@ -15,7 +15,7 @@ const EventInfo = props => {
                 <Container className="info-row" size="large" flexDirection="column">
                     <div className="floating-content">
                         {/* <div className="floating-image floating-image-5 rellax" data-rellax-percentage="0.5"data-rellax-speed="-2" data-aos="fadeInUp">
-                            <Image src="/Shoe.png" layout="fill" />
+                            <NextImage src="/Shoe.png" layout="fill" />
                         </div> */}
                     </div>
                     <Container size="large" flexDirection="column">
@@ -34,28 +34,28 @@ const EventInfo = props => {
                                 <div className="floating-image floating-image-1 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-1">
-                                    <Image layout='fill' src="/Fashion_Killa_Galaxy_02.png" />
+                                    <NextImage layout='fill' src="/Fashion_Killa_Galaxy_02.png" />
                                 </div>
                                 <div className="floating-image floating-image-2 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5"data-rellax-speed="-2" >
-                                    <Image src="/Helmet.jpg" layout="fill" />
+                                    <NextImage src="/Helmet.jpg" layout="fill" />
                                 </div>
                                 <div className="floating-image floating-image-3 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5"data-rellax-speed="-2" >
-                                    <Image src="/ClothingYellowBG.png" layout="fill" />
+                                    <NextImage src="/ClothingYellowBG.png" layout="fill" />
                                 </div>
                                 <div className="floating-image floating-image-4 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-2" >
-                                    <Image src="/ClothingBlackNeonBG.png" layout="fill" />
+                                    <NextImage src="/ClothingBlackNeonBG.png" layout="fill" />
                                 </div>
 
                                 <div className="floating-image floating-image-6 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-2" >
-                                    <Image src="/ClothingArtisant.png" layout="fill" />
+                                    <NextImage src="/ClothingArtisant.png" layout="fill" />
                                 </div>
                                 <div className="floating-image floating-image-7 rellax" 
                                 data-aos="fadeInUp" 
@@ -64,17 +64,17 @@ const EventInfo = props => {
                                 <div className="floating-image floating-image-8 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-1" >
-                                    <Image src="/watch.png" layout="fill" />
+                                    <NextImage src="/watch.png" layout="fill" />
                                 </div>
                                 <div className="floating-image floating-image-9 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-1" >
-                                    <Image src="/jacket.png" layout="fill" />
+                                    <NextImage src="/jacket.png" layout="fill" />
                                 </div>
                                 <div className="floating-image floating-image-10 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-1" >
-                                    <Image src="/venue.png" layout="fill" />
+                                    <NextImage src="/venue.png" layout="fill" />
                                 </div>
                                 <div className="floating-image floating-image-11 rellax" 
                                 data-aos="fadeInUp" 
@@ -84,12 +84,12 @@ const EventInfo = props => {
                                 <div className="floating-image floating-image-12 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-1" >
-                                    <Image src="/hat.png" layout="fill" />
+                                    <NextImage src="/hat.png" layout="fill" />
                                 </div>
                                 <div className="floating-image floating-image-13 rellax" 
                                 data-aos="fadeInUp" 
                                 data-rellax-percentage="0.5" data-rellax-speed="-1" >
-                                    <Image src="/voguShoes.png" layout="fill" />
+                                    <NextImage src="/voguShoes.png" layout="fill" />
                                 </div>
                             </div>
                         </div>
