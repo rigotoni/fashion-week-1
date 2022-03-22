@@ -1,18 +1,12 @@
 import Head from 'next/head';
-import { Fragment, useEffect } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Rellax from 'rellax';
 
 import Navbar from './../components/Navbar';
-import HomepageHero from './../components/HomepageHero';
-import EventInfo from '../components/EventInfo';
-import EventSchedule from '../components/EventSchedule';
-import Zones from '../components/Zones';
 import Footer from '../components/Footer';
-import TextBanner from '../components/TextBanner';
-import LowerBanner from '../components/LowerBanner';
 import Container from '../components/Container';
 
 export default function Home() {
@@ -42,17 +36,17 @@ export default function Home() {
                 '14': null,
                 '15': null,
                 '16': null,
-                '17': [
+                '17': null,
+                '18': null,
+                '19': null,
+                '20': null,
+                '21': [
                     {
                         eventName: 'Selfridges Opening',
                         location: 'Independent',
                         url: '#'
                     }
                 ],
-                '18': null,
-                '19': null,
-                '20': null,
-                '21': null,
                 '22': null,
                 '23': null,
             }
@@ -512,17 +506,17 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="schedule-body">
-                                {timeslots.map((timeslot, key) => (
-                                    <div key="key" className="hour-row">
+                                {timeslots.map((timeslot) => (
+                                    <div key={timeslot} className="hour-row">
                                         <div className="time">
                                             {timeslot - 12}pm
                                         </div>
                                         <div className="events">
-                                            {Schedule.map((day, key) => (
-                                                <div className={'timeslot-events'} key={key}>
+                                            {Schedule.map((day) => (
+                                                <div className={'timeslot-events'} key={day.dateName}>
                                                     {day.timeslots[timeslot] && 
-                                                    day.timeslots[timeslot].map((event, key) => (
-                                                        <div key={key} className={`event ${event.location.replaceAll(' ', '-')}`}>
+                                                    day.timeslots[timeslot].map((event) => (
+                                                        <div key={event.location} className={`event ${event.location.replaceAll(' ', '-')}`}>
                                                             <strong className="event-name">
                                                                 {event.eventName}
                                                             </strong>

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import NextImage from './NextImage';
 import styled from 'styled-components';
 import Container from './Container';
-import { scrollTo } from '../utils/utils';
 
 const Navbar = props => {
 

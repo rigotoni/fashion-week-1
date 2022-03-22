@@ -15,13 +15,13 @@ const scheduleData = {
                     stage: 'MetaParty',
                 },
                 {
-                    time: '05:00 PM',
-                    name: 'Selfridges Opening',
+                    time: '07:00 PM',
+                    name: 'NRT1-META DCL Sneakers',
                     stage: 'Independent Stores',
                 },
                 {
-                    time: '07:00 PM',
-                    name: 'NRT1-META DCL Sneakers',
+                    time: '09:00 PM',
+                    name: 'Selfridges Opening',
                     stage: 'Independent Stores',
                 },
                 {
