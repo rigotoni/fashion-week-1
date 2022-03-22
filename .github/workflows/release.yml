@@ -1,0 +1,35 @@
+name: release
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  release:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org/
+
+      - name: installing
+        run: yarn install --immutable --immutable-cache --check-cache
+
+      - name: building
+        run: yarn build
+        env:
+          NEXT_PUBLIC_SEGMENT_KEY: '0000'
+
+      - name: publishing documents
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./out
+          CNAME: mvfw.org
