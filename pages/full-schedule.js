@@ -515,7 +515,7 @@ export default function Home() {
                                 {timeslots.map((timeslot, key) => (
                                     <div key="key" className="hour-row">
                                         <div className="time">
-                                            {timeslot}pm
+                                            {timeslot - 12}pm
                                         </div>
                                         <div className="events">
                                             {Schedule.map((day, key) => (
@@ -580,8 +580,8 @@ const StyledHome = styled.main`
                 .dates {
                     display: flex;
                     flex-grow: 1;
+                    justify-content: space-evenly;
                     .day-column-header {
-                        flex-grow: 1;
                         text-align: center;
                         display: flex;
                         justify-content: center;
@@ -589,6 +589,7 @@ const StyledHome = styled.main`
                         font-family: Inter;
                         font-size: 12px;
                         opacity: 0.7;
+                        width: 20%;
                     }
                 }
 
