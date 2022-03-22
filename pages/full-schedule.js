@@ -505,7 +505,7 @@ export default function Home() {
                                 <div className="time-column-header"/>
                                 <div className="dates">
                                     {Schedule.map((day, key) => (
-                                        <div className="day-column-header">
+                                        <div className="day-column-header" key={key}>
                                             {day.dateName}
                                         </div>
                                     ))}

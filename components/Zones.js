@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import theme from '../utils/theme';
 import Container from './Container';
 import Marquee from 'react-fast-marquee';
-import Image from 'next/image';
+import NextImage from './NextImage';
 import { MdLocationOn } from 'react-icons/md';
 
 const Marquees = [
@@ -94,7 +93,7 @@ const Zones = props => {
                                     <li key={index} className={zone.name.replace(' ', '-')}>
                                         <a href={`https://play.decentraland.org/?position=${zone.coordinate[0]}%2C${zone.coordinate[1]}`}>
                                             <div className="zone-image">
-                                                <Image objectFit={'contain'} alt={zone.name} src={'/Teleporters' + zone.imgUrl} layout="fill"/>
+                                                <NextImage objectFit={'contain'} alt={zone.name} src={'/Teleporters' + zone.imgUrl} layout="fill"/>
                                                 <div className="image-overlay">
                                                     <span className="go-to-button" role="button">JUMP IN</span>
                                                 </div>
