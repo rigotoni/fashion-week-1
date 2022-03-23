@@ -9,6 +9,26 @@ import Navbar from './../components/Navbar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
 
+const Event = (props) => {
+    return (
+        <div className={`event ${props.event.location.replaceAll(' ', '-')} ${props.event.url ? 'has-link' : ''}`}>
+            <strong className="event-name">
+                {props.event.eventName}
+            </strong>
+            <span className="event-location">
+                {props.event.location}
+            </span>
+            {props.event.url && (
+                <div className="event-footer">
+                    <a className="event-info" href={props.event.url} target="_blank" rel="noopener roreferrer">
+                        Click for More Info
+                    </a>
+                </div>
+            )}
+        </div>
+    )
+}
+
 export default function Home() {
 
 	useEffect(() => {
@@ -44,7 +64,7 @@ export default function Home() {
                     {
                         eventName: 'Selfridges Opening',
                         location: 'Independent',
-                        url: '#'
+                        url: 'https://play.decentraland.org/?island=Iayf&position=63%2C15'
                     }
                 ],
                 '22': null,
@@ -58,117 +78,127 @@ export default function Home() {
                     {
                         eventName: 'Panel Talk: Future of Commerce / Decentralizing Commerce',
                         location: 'Boson Portal',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'MetaTokyo Zone Opening',
                         location: 'MetaTokyo Zone',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=e95c5ce9-ca0e-46de-8bb2-4cecd875879a'
                     }
                 ],
                 '14': [
                     {
                         eventName: 'MVFW Fashion Design Exhibition ',
                         location: 'Dragon City',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=a65cddd1-73f8-487d-95c5-7090dd379b9a'
                     },
                     {
                         eventName: '#DragonStyle Selfie Contest',
                         location: 'Dragon City',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=a65cddd1-73f8-487d-95c5-7090dd379b9a'
                     },
                     {
                         eventName: 'Known Origin Exhibition + DJ Set 6 pm GMT',
                         location: 'Independent',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'Enter the Metaverse; Dressing our Avatars',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=c612baa2-e0f0-40fa-a1b5-c2ee6ab216c3'
                     },
                 ],
                 '15': [
                     {
+                        eventName: 'Metaloop Day 1 Catwalk: Perry Ellis  | IKKS | Christine Massarany  (2PM )',
+                        location: 'Cash Labs Space',
+                        url: 'https://events.decentraland.org/event/?id=c612baa2-e0f0-40fa-a1b5-c2ee6ab216c3'
+                    },
+                    {
                         eventName: 'Catwalk: Perry Ellis 15:00  / IKKS 15:30',
-                        location: 'Kolectiff Catwalk',
-                        url: '#'
+                        location: 'Kollectiff Catwalk',
+                        url: null
                     },
                     {
                         eventName: 'Christine Massarany',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                 ],
                 '16': [
                     {
                         eventName: 'UNXD Luxury District Opening',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=60a6ddef-b6fc-49f1-9b6f-0cb3fc868c13'
+                    },
+                    {
+                        eventName: 'Welcome to MVFW with Cathy Hackl',
+                        location: 'Threedium Mall',
+                        url: 'https://events.decentraland.org/event/?id=bdb9a5bd-2323-40d7-8a06-966446d7879a'
                     },
                 ],
                 '17': [
                     {
                         eventName: 'Dolce&Gabbana +UNXD Catwalk',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=8f2902ca-8e1b-4d79-a145-403ebc52fb14'
                     },
                 ],
                 '18': [
                     {
                         eventName: 'Rarible Fresh Drip Opening',
                         location: 'Rarible',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=6b7ffb70-5844-4a9a-992e-8e1933346501'
                     },
                 ],
                 '19': [
                     {
                         eventName: 'Fashion on Film; Consuming Fashion Virtually',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=201a9d30-8c27-4bdc-8117-e6ba6f1d0f4c'
                     },
                     {
                         eventName: 'Mini Games',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     },
                 ],
                 '20': [
                     {
-                        eventName: 'Community Wearable Showcasing',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        eventName: 'Phillip Plein Runway + Night Party',
+                        location: 'UNXD Luxury District',
+                        url: 'https://events.decentraland.org/event/?id=d4203ca5-3eb0-43eb-8957-e9f1a8300cab'
                     },
                     {
-                        eventName: 'Metaparty Opening',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        eventName: 'Parcel-MetaParty Community Precinct Opening',
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: 'https://events.decentraland.org/event/?id=f4896eac-7265-4874-8280-2e5a14c6db3d'
                     },
                 ],
                 '21': [
                     {
                         eventName: 'Acura (car brand) with playlist ',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'Body Architecture',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=3e0e806f-6427-4844-957e-6e7eb19e7a41'
                     },
                 ],
                 '22': [
                     {
                         eventName: 'Interview with Michi Todd',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     },
                 ],
                 '23': [
                     {
                         eventName: 'Interview with DecentralWear // 10:40pm UTC: Mike Salvis 10 minute comedy set',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     }
                 ]
             }
@@ -180,98 +210,108 @@ export default function Home() {
                     {
                         eventName: 'Panel Talk: Metaverse Fashion: Digital to Physical',
                         location: 'Boson Portal',
-                        url: '#'
+                        url: null
                     }
                 ],
                 '14': [
                     {
                         eventName: 'Panel Talk: NFTs with Superpowers ',
                         location: 'Boson Portal',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'Ecommerce & The Metaverse',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://play.decentraland.org/?position=95%2C-117'
+                    },
+                    {
+                        eventName: 'Metaloop Day 2 Catwalk: MTA X DressX | The Rebels | Dazzle (2 PM)',
+                        location: 'Kollectiff Catwalk ',
+                        url: null
                     }
                 ],
                 '15': [
                     {
                         eventName: 'Etro (UNXD) Catwalk Show',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=9b51d275-e4c5-411d-8ceb-33d36a4ff410'
                     },
                     {
                         eventName: 'MTA X DressX 15:00 / Anrealage 15:30',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'Panel Talk: Fireside chat with Mr Tommy Hilfiger ',
                         location: 'Boson Portal',
-                        url: '#'
+                        url: null
                     }
                 ],
                 '16': [
                     {
                         eventName: 'Creating Fashion outside the confines of Reality',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=847bcbff-a9c7-4ded-a2db-4da04d4bb23e'
                     },
                     {
                         eventName: '8SIAN',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                 ],
                 '17': [
                     {
                         eventName: 'Threedium Mall Opening',
                         location: 'Threedium Mall',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=19fdd27a-fe9f-4858-8f8a-7151ea6d64b0'
                     }
                 ],
                 '18': [
                     {
                         eventName: 'Placebo Catwalk Show',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=17480173-5845-4ec7-85ef-2674e14ae526'
                     }
                 ],
                 '19': [
                     {
+                        eventName: 'Kollectiff Catwalk Opening',
+                        location: 'Kollectiff Catwalk',
+                        url: 'https://events.decentraland.org/event/?id=e11f9120-f533-4f74-98ca-e013058e271b'
+                    },
+                    {
                         eventName: 'Mini Games',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     }
                 ],
                 '20': [
                     {
                         eventName: 'Boson Portal Opening',
                         location: 'Boson Portal',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=7877d896-b94b-4d71-aa19-758d28561a34'
                     },
                     {
                         eventName: 'Music, Performances & Introduction',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     },
                 ],
                 '21': [
                     {
                         eventName: 'Closing Party Tribute Brand + ICYKOF',
                         location: 'Independent',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=5079ea6f-247b-46ca-964b-f42567a78491'
                     },
                     {
                         eventName: 'After Party',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                     {
-                        eventName: 'Charlie Cohen\'s Electrict City powered by Yahoo ',
+                        eventName: 'The Initiation: a Charli Cohen x RSTLSS Experience, presented by Yahoo ',
                         location: 'Independent',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=c245a2f2-9c5c-4d41-a68a-274c353dac24'
                     },
                 ],
                 '22': null,
@@ -285,90 +325,95 @@ export default function Home() {
                     {
                         eventName: 'Opening',
                         location: 'Dragon City',
-                        url: '#'
+                        url: 'https://play.decentraland.org/?position=95%2C-117'
                     }
                 ],
                 '14': [
                     {
                         eventName: 'Phygital Fashion',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=addb3915-38da-47c7-9019-ef290a68fb85'
+                    },
+                    {
+                        eventName: 'Metaloop Day 3 Catwalk: Cider | The Rebels | Dazzle',
+                        location: 'Kollectiff Catwalk',
+                        url: 'https://events.decentraland.org/event/?id=addb3915-38da-47c7-9019-ef290a68fb85'
                     },
                 ],
                 '15': [
                     {
-                        eventName: 'Catwalk Night',
+                        eventName: 'Dragon City Catwalk Night',
                         location: 'Dragon City',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=4e63909a-c44f-45c5-9ae5-6b914d23eb0c'
                     },
                     {
                         eventName: 'Cider',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'Virtual Couture; Digitizing High Fashion',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=e1ce4cec-05a6-4877-96c7-45134a4bb2ed'
                     }
                 ],
                 '16': [
                     {
                         eventName: 'The Rebels',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                 ],
                 '17': [
                     {
                         eventName: 'Vogu & Hype Catwalk Show',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=28719fea-18ab-49be-b9f4-2c807d0e9a1d'
                     }
                 ],
                 '18': [
                     {
                         eventName: 'Fresh Couture Catwalk Show',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=ee01342e-b5eb-48a6-b2de-8e4eefcff89e'
                     }
                 ],
                 '19': [
                     {
                         eventName: 'Opening Party Hogan/Exclusible (Bob Sinclair)',
                         location: 'Independent',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=78fb2393-5eaf-4d65-8dc5-b74245d4d0eb'
                     },
                     {
                         eventName: 'Mini Games',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     }
                 ],
                 '20': [
                     {
                         eventName: 'Creating Fashion Imagery:',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'Music, Performances & Introduction',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     },
                 ],
                 '21': [
                     {
                         eventName: 'Nicki Nicole After Party',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                 ],
                 '22': [
                     {
                         eventName: 'Interview with Yanniks',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     },
                 ],
                 '23': null,
@@ -382,36 +427,36 @@ export default function Home() {
                     {
                         eventName: 'MetaJam Award Ceremony ',
                         location: 'Dragon City',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=a65cddd1-73f8-487d-95c5-7090dd379b9a'
                     },
                     {
                         eventName: 'Estée Lauder',
                         location: 'Independent',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=4fa07fa0-61e1-4415-a01c-9172896ac138'
                     },
                 ],
                 '15': [
                     {
                         eventName: 'NounsDAO',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'Opening Party: Faith Connexion & Blond:ish',
                         location: 'Independent',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=602430cf-ec89-4017-b4fb-900b9d184072'
                     }
                 ],
                 '16': [
                     {
                         eventName: 'Sustainability & Fashion',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=8826165a-cb06-4ab1-b361-bebe3ab2bf30'
                     },
                     {
                         eventName: 'The Metaverse Travel Agency',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                 ],
                 '17': null,
@@ -420,60 +465,60 @@ export default function Home() {
                     {
                         eventName: 'Gary McQueen',
                         location: 'Independent',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'The Fabricant Catwalk Show',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=2207a1e3-c793-4110-ac27-1bf2d6b9ddce'
                     },
                     {
                         eventName: 'Mini Games',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     }
                 ],
                 '20': [
                     {
                         eventName: 'Dundas (UNXD) Catwalk Show',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=d10f2212-554a-4ac6-b822-961aa6d9a045'
                     },
                     {
                         eventName: 'Music, Performances & Introduction',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     },
                 ],
                 '21': [
                     {
                         eventName: 'After Party',
                         location: 'Kolectiff Catwalk',
-                        url: '#'
+                        url: null
                     },
                     {
                         eventName: 'Interview with Parcel',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     },
                     {
                         eventName: 'The History & Future of Virtual Fashion',
                         location: 'Cash Labs Space',
-                        url: '#'
+                        url: 'https://events.decentraland.org/event/?id=49488809-253b-4736-a056-d35c13504eb8'
                     },
                 ],
                 '22': [
                     {
                         eventName: 'UNXD - Auroboros Closing Party',
                         location: 'UNXD Luxury District',
-                        url: '#'
+                        url: null
                     },
                 ],
                 '23': [
                     {
                         eventName: 'Interview with Fansoid',
-                        location: 'Parcel-Metaparty Community Precint',
-                        url: '#'
+                        location: 'Parcel-Metaparty Community Precinct',
+                        url: null
                     },
                 ],
             }
@@ -516,14 +561,13 @@ export default function Home() {
                                                 <div className={'timeslot-events'} key={day.dateName}>
                                                     {day.timeslots[timeslot] && 
                                                     day.timeslots[timeslot].map((event, key) => (
-                                                        <div key={key} className={`event ${event.location.replaceAll(' ', '-')}`}>
-                                                            <strong className="event-name">
-                                                                {event.eventName}
-                                                            </strong>
-                                                            <span className="event-location">
-                                                                {event.location}
-                                                            </span>
-                                                        </div>
+                                                        event.url ? (
+                                                            <a key={key} href="" target="_blank" rel="noopener noreferrer">
+                                                                <Event event={event}/>
+                                                            </a>
+                                                        ) : (
+                                                            <Event key={key} event={event}/>
+                                                        )
                                                     ))}
                                                 </div>
                                             ))}
@@ -552,14 +596,13 @@ export default function Home() {
                                                     <div className="timeslot-events">
                                                         {day.timeslots[timeslot] && 
                                                         day.timeslots[timeslot].map((event, key) => (
-                                                            <div key={key} className={`event ${event.location.replaceAll(' ', '-')}`}>
-                                                                <strong className="event-name">
-                                                                    {event.eventName}
-                                                                </strong>
-                                                                <span className="event-location">
-                                                                    {event.location}
-                                                                </span>
-                                                            </div>
+                                                            event.url ? (
+                                                                <a key={key} href="" target="_blank" rel="noopener noreferrer">
+                                                                    <Event event={event}/>
+                                                                </a>
+                                                            ) : (
+                                                                <Event key={key} event={event}/>
+                                                            )
                                                         ))}
                                                     </div>
                                                 </div>
@@ -678,10 +721,51 @@ const StyledHome = styled.main`
                             display: flex;
                             flex-direction: column;
                             border-bottom: 3px solid gray;
+                            transition: 0.15s ease-in-out all;
+                            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                            &.has-link {
+                                &:hover {
+                                    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+                                    transform: scale(1.05);
+                                    .event-info {
+                                        color: white;
+                                        background: ${props => props.theme.color.red};
+                                    }
+                                }
+                            }
+                            &:not(.has-link) {
+                                cursor: default;
+                            }
+                            .event-footer {
+                                display: flex;
+                                margin-top: 12px;
+                                /* align-items: baseline; */
+                                .event-info {
+                                    font-family: Inter;
+                                    font-size: 14px;
+                                    height: 32px;
+                                    width: 100%;
+                                    line-height: 32px;
+                                    text-align: center;
+                                    background: white;
+                                    color: ${props => props.theme.color.red};
+                                    border: 1px solid ${props => props.theme.color.red};
+                                    border-radius: 2px;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    align-items: center;
+                                    display: inline-block;
+                                    justify-content: center;
+                                    font-size: 12px;
+                                    padding: 0 16px;
+                                    transition: 0.15s ease-in-out all;
+                                    max-width: 200px;
+                                }
+                            }
                             &.Boson-Portal {
                                 border-bottom-color: #06F9A7;
                             }
-                            &.Metaparty-Community-Area {
+                            &.Parcel-Metaparty-Community-Precinct {
                                 border-bottom-color: #FF0000;
                             }
                             &.Dragon-City {

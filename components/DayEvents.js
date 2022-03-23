@@ -1,20 +1,39 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
 
+const Event = (props) => {
+    return (
+        <li className={`${props.event.stage.replaceAll(' ', '-')} ${props.event.url ? 'has-link' : ''}`}>
+            <span className="time">{props.event.time}</span>
+            <span className="event-name">{props.event.name}</span>
+            <div className="event-footer">
+                <span className="event-stage">{props.event.stage}</span>
+                {props.event.url && (
+                    <a className="event-info" href={props.event.url} target="_blank" rel="noopener roreferrer">
+                        Click for More Info
+                    </a>
+                )}
+            </div>
+        </li>
+    )
+}
+
 const DayEvents = props => {
     const {selectedDayData} = props;
     return (
         <StyledDayEvents>
             {selectedDayData.map((dayData, index) => (
                 <Fragment key={index}>
-                    {/* <h3>{dayData.stage}</h3> */}
                     <ul>
                         {dayData.events.map((event, index) => (
-                            <li key={index} className={event.stage.replaceAll(' ', '-')}>
-                                <span className="time">{event.time}</span>
-                                <span className="event-name">{event.name}</span>
-                                <span className="event-stage">{event.stage}</span>
-                            </li>
+                            event.url ? (
+                                <a href={event.url} target="_blank" rel="noopener roreferrer">
+                                    <Event event={event} key={index} />
+                                </a>
+
+                            ) : (
+                                <Event event={event} key={index} />
+                            )
                         ))}
                     </ul>
                 </Fragment>
@@ -41,6 +60,47 @@ const StyledDayEvents = styled.section`
             margin-bottom: 32px;
             padding-left: 24px;
             transition: 0.15s ease-in-out all;
+            background: white;
+            padding: 24px;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+            &.has-link {
+                &:hover {
+                    box-shadow: 0 16px 16px rgba(0,0,0,0.1);
+                    .event-info {
+                        color: white;
+                        background: ${props => props.theme.color.red};
+                    }
+                }
+            }
+            &:not(.has-link) {
+                cursor: default;
+            }
+            .event-footer {
+                display: flex;
+                align-items: baseline;
+                .event-info {
+                    margin-left: auto;
+                    font-family: Inter;
+                    font-size: 14px;
+                    
+                    /* width: 32px; */
+                    height: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                    background: white;
+                    color: ${props => props.theme.color.red};
+                    border: 1px solid ${props => props.theme.color.red};
+                    border-radius: 2px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    align-items: center;
+                    display: inline-block;
+                    justify-content: center;
+                    font-size: 12px;
+                    padding: 0 16px;
+                    transition: 0.15s ease-in-out all;
+                }
+            }
             &.UNXD-Luxury-District {
                 border-left: 4px solid orange;
                 .event-stage {
@@ -95,7 +155,7 @@ const StyledDayEvents = styled.section`
                     color: #ffd900;
                 }
             }
-            &.Parcel-Metaparty-Community-Precint {
+            &.Parcel-Metaparty-Community-Precinct {
                 border-left: 4px solid ${props => props.theme.color.red};
                 .event-stage {
                     color: ${props => props.theme.color.red};
@@ -112,7 +172,7 @@ const StyledDayEvents = styled.section`
             }
             .time {
                 font-family: Inter;
-                font-weight: 200;
+                font-weight: 300;
                 color: ${props => props.theme.color.gray500};
             }
             .event-name {
@@ -136,10 +196,13 @@ const StyledDayEvents = styled.section`
         margin-top: 18px;
         ul {
             li {
-                background: white;
                 padding: 16px 16px;
                 border-radius: 4px;
                 margin-bottom: 8px;
+                box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+                &:hover {
+                    box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+                }
                 .time {
                     font-size: 12px;
                     font-weight: 300;
@@ -148,8 +211,11 @@ const StyledDayEvents = styled.section`
                     font-size: 22px;
                 } 
                 .event-stage {
-                    font-size: 18px;
+                    font-size: 16px;
                 } 
+                .event-info {
+                    white-space: nowrap;
+                }
             }
         }
     }
