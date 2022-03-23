@@ -12,7 +12,7 @@ const Countdown = props => {
 
     
     useEffect(() => {
-        let festivalDate = new Date('Mar 23, 2022 20:00:00');
+        let festivalDate = new Date('Mar 24, 2022 13:00:00');
         festivalDate = new Date(festivalDate);
         festivalDate.setUTCHours(8);
         const UTCFestivalDate = new Date(festivalDate.toUTCString()).getTime();

@@ -45,7 +45,7 @@ const Marquees = [
         },
         {
             name: 'Selfridges',
-            coordinate: [64, 13],
+            coordinate: [71, 14],
             imgUrl: '/Selfridges.png'
         },
         {
@@ -55,12 +55,12 @@ const Marquees = [
         },
         {
             name: 'Rarible',
-            coordinate: [2, 16],
+            coordinate: [-44, 70],
             imgUrl: '/Rarible.png'
         },
         {
-            name: 'Luxury District',
-            coordinate: [94, -13],
+            name: 'UNXD Luxury District',
+            coordinate: [-100,-18],
             imgUrl: '/Luxury District.png'
         },
         {

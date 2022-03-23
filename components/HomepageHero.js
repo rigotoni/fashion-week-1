@@ -15,6 +15,15 @@ const HomepageHero = props => {
                 <span className="date">23 - 27 MARCH</span>
                 <NextImage src="/MVFW.png" alt="Metaverse Fashion Week" width={800} height={300} />
                 <h1>METAVERSE FASHION WEEK</h1>
+                <div className="logos-container">
+                    <span className="label">Pioneered by</span>
+                    <div className="logo">
+                        <NextImage src={'/unxd-black-transparent.png'} alt={'UNXD'} title={'UNXD'} width={120} height={22}/>
+                    </div>
+                    <div className="logo">
+                        <NextImage src={'/VGA_LOGO.png'} width={120} height={80} alt={'Vogue Arabia'} title={'Vogue '}/>
+                    </div>
+                </div>
                 <Countdown />
                 <div className="down-arrows">
                     <div></div>
@@ -65,6 +74,21 @@ const StyledHomepageHero = styled.section`
         height: 100%;
         padding-top: 80px;
         min-height: 980px;
+        .logos-container {
+            /* margin-top: 12px; */
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            .label {
+                font-family: Inter;
+                margin-right: 12px;
+                font-size: 12px;
+                opacity: 0.5;
+            }
+            .logo {
+                margin-right: 12px;
+            }
+        }
         .date {
             font-size: 40px;
             letter-spacing: 0.2em;
@@ -72,7 +96,7 @@ const StyledHomepageHero = styled.section`
         h1 {
             font-size: 58px;
             line-height: 60px;
-            margin: 12px auto 40px;
+            margin: 0px auto 0px;
             letter-spacing: 0.2em;
             font-weight: 200;
         }
@@ -85,8 +109,16 @@ const StyledHomepageHero = styled.section`
             padding-top: 0px;
             min-height: unset;
             height: unset;
+            .logos-container {
+                .logo {
+                    width: 80px;
+                }
+                .label {
+                    font-size: 10px;
+                }
+            }
             .date {
-                font-size: 32px;
+                font-size: 20px;
             }
             h1 {
                 text-align: center;

@@ -2,11 +2,11 @@ import { Fragment } from "react";
 import styled from "styled-components";
 
 const days = [
+    'DAY 0',
     'DAY 1',
     'DAY 2',
     'DAY 3',
     'DAY 4',
-    'DAY 5',
 ];
 
 const DaySelector = props => {
@@ -21,11 +21,11 @@ const DaySelector = props => {
                 {days.map((day, index) => (
                     <Fragment key={index}>
                         <li 
-                            className={index + 1 === selectedDay ? 'selected' : undefined}
-                            onClick={() => {setSelectedDay(index + 1)}}>
+                            className={index === selectedDay ? 'selected' : undefined}
+                            onClick={() => {setSelectedDay(index)}}>
                             {day}
                         </li>
-                        <span className="separator">
+                        <span className="separator">    
                             {index < days.length - 1 && ' / '}
                         </span>
                     </Fragment>

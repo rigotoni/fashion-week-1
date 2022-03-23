@@ -109,7 +109,7 @@ export default function Home() {
                 ],
                 '17': [
                     {
-                        eventName: 'D&G +UNXD Opening Party',
+                        eventName: 'Dolce&Gabbana +UNXD Catwalk',
                         location: 'UNXD Luxury District',
                         url: '#'
                     },
@@ -129,19 +129,19 @@ export default function Home() {
                     },
                     {
                         eventName: 'Mini Games',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                 ],
                 '20': [
                     {
                         eventName: 'Community Wearable Showcasing',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                     {
                         eventName: 'Metaparty Opening',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                 ],
@@ -160,14 +160,14 @@ export default function Home() {
                 '22': [
                     {
                         eventName: 'Interview with Michi Todd',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                 ],
                 '23': [
                     {
                         eventName: 'Interview with DecentralWear // 10:40pm UTC: Mike Salvis 10 minute comedy set',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     }
                 ]
@@ -241,7 +241,7 @@ export default function Home() {
                 '19': [
                     {
                         eventName: 'Mini Games',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     }
                 ],
@@ -253,7 +253,7 @@ export default function Home() {
                     },
                     {
                         eventName: 'Music, Performances & Introduction',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                 ],
@@ -341,7 +341,7 @@ export default function Home() {
                     },
                     {
                         eventName: 'Mini Games',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     }
                 ],
@@ -353,7 +353,7 @@ export default function Home() {
                     },
                     {
                         eventName: 'Music, Performances & Introduction',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                 ],
@@ -367,7 +367,7 @@ export default function Home() {
                 '22': [
                     {
                         eventName: 'Interview with Yanniks',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                 ],
@@ -429,7 +429,7 @@ export default function Home() {
                     },
                     {
                         eventName: 'Mini Games',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     }
                 ],
@@ -441,7 +441,7 @@ export default function Home() {
                     },
                     {
                         eventName: 'Music, Performances & Introduction',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                 ],
@@ -453,7 +453,7 @@ export default function Home() {
                     },
                     {
                         eventName: 'Interview with Parcel',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                     {
@@ -472,7 +472,7 @@ export default function Home() {
                 '23': [
                     {
                         eventName: 'Interview with Fansoid',
-                        location: 'Metaparty Community Area',
+                        location: 'Parcel-Metaparty Community Precint',
                         url: '#'
                     },
                 ],
@@ -494,7 +494,7 @@ export default function Home() {
 				<main>
                     <Container size="large" flexDirection="column">
                         <h1>FULL SCHEDULE</h1>
-                        <section className="full-schedule">
+                        <section className="full-schedule desktop">
                             <div className="schedule-header">
                                 <div className="time-column-header"/>
                                 <div className="dates">
@@ -515,8 +515,8 @@ export default function Home() {
                                             {Schedule.map((day) => (
                                                 <div className={'timeslot-events'} key={day.dateName}>
                                                     {day.timeslots[timeslot] && 
-                                                    day.timeslots[timeslot].map((event) => (
-                                                        <div key={event.location} className={`event ${event.location.replaceAll(' ', '-')}`}>
+                                                    day.timeslots[timeslot].map((event, key) => (
+                                                        <div key={key} className={`event ${event.location.replaceAll(' ', '-')}`}>
                                                             <strong className="event-name">
                                                                 {event.eventName}
                                                             </strong>
@@ -527,15 +527,48 @@ export default function Home() {
                                                     ))}
                                                 </div>
                                             ))}
-                                            {/* {Schedule.map((day, key) => {
-                                                console.log(day.timeslots[timeslot]);
-                                                return ('')
-                                            })} */}
                                         </div>
                                     </div>
                                 ))}
                             </div>
                         </section>
+                        <section className="full-schedule mobile">
+                            {Schedule.map((day, key) => (
+                                <>
+                                    <div className="schedule-header" key={day.dateName}>
+                                        <div className="dates">
+                                            <div className="day-column-header">
+                                                {day.dateName}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="schedule-body">
+                                        {timeslots.map((timeslot) => day.timeslots[timeslot] ? (
+                                            <div key={timeslot} className="hour-row">
+                                                <div className="time">
+                                                    {timeslot - 12}pm <br/>GMT
+                                                </div>
+                                                <div className="events">
+                                                    <div className="timeslot-events">
+                                                        {day.timeslots[timeslot] && 
+                                                        day.timeslots[timeslot].map((event, key) => (
+                                                            <div key={key} className={`event ${event.location.replaceAll(' ', '-')}`}>
+                                                                <strong className="event-name">
+                                                                    {event.eventName}
+                                                                </strong>
+                                                                <span className="event-location">
+                                                                    {event.location}
+                                                                </span>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ) : '')}
+                                    </div>
+                                </>
+                            ))}
+                    </section>
                     </Container>
 				</main>
 			</StyledHome>
@@ -560,6 +593,9 @@ const StyledHome = styled.main`
             font-size: 80px;
             text-align: center;
         }
+        .mobile {
+            display: none;
+        }
         .full-schedule {
             margin-top: 40px;
             margin-bottom: 80px;
@@ -569,7 +605,6 @@ const StyledHome = styled.main`
                 line-height: 40px;
                 .time-column-header {
                     width: 100px;
-                    /* background: black; */
                 }
                 .dates {
                     display: flex;
@@ -692,6 +727,52 @@ const StyledHome = styled.main`
         }
     }
 	@media screen and (max-width: ${props => props.theme.breakpoints.m}) {
-
+        main {
+            h1 {
+                font-size: 40px;
+                letter-spacing: 0.1em;
+            }
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .full-schedule {
+                flex-direction: column;
+                .schedule-header {
+                    .dates {
+                        width: 100%;
+                        .day-column-header {
+                            /* background: black; */
+                            font-size: 20px;
+                            position: relative;
+                            white-space: nowrap;
+                            color: black !important;
+                            opacity: 1;
+                            font-weight: 600;
+                            padding-left: 72px;
+                            padding-bottom: 16px;
+                            width: 100%;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+                .schedule-body {
+                    margin-bottom: 60px;
+                    .hour-row {
+                        .time {
+                            min-width: 60px;
+                            font-size: 16px;
+                            justify-content: flex-start;
+                        }
+                    }
+                    .events {
+                        flex-direction: column;
+                        padding: 0;
+                    }
+                }
+            }
+        }
 	}
 `;
