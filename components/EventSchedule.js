@@ -77,7 +77,7 @@ const scheduleData = {
                 },
                 {
                     time: '05:00 PM GMT',
-                    name: 'Dolce&Gabbana +UNXD Opening Party',
+                    name: 'Dolce&Gabbana +UNXD Catwalk',
                     stage: 'UNXD Luxury District',
                 },
                 {
