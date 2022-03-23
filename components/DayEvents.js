@@ -10,7 +10,7 @@ const DayEvents = props => {
                     {/* <h3>{dayData.stage}</h3> */}
                     <ul>
                         {dayData.events.map((event, index) => (
-                            <li key={index} className={event.stage.replace(' ', '-')}>
+                            <li key={index} className={event.stage.replaceAll(' ', '-')}>
                                 <span className="time">{event.time}</span>
                                 <span className="event-name">{event.name}</span>
                                 <span className="event-stage">{event.stage}</span>
@@ -41,43 +41,43 @@ const StyledDayEvents = styled.section`
             margin-bottom: 32px;
             padding-left: 24px;
             transition: 0.15s ease-in-out all;
-            &.Luxury-Area {
+            &.UNXD-Luxury-District {
                 border-left: 4px solid orange;
                 .event-stage {
                     color: orange;
                 }
             }
-            &.CashLabs {
+            &.Cash-Labs-Space {
                 border-left: 4px solid violet;
                 .event-stage {
                     color: violet;
                 }
             }
-            &.Independent-Stores {
+            &.Independent {
                 border-left: 4px solid dodgerblue;
                 .event-stage {
                     color: dodgerblue;
                 }
             }
-            &.Threedium {
+            &.Threedium-Mall {
                 border-left: 4px solid #12e112;
                 .event-stage {
                     color: #12e112;
                 }
             }
-            &.Boson-Protocol {
+            &.Boson-Portal {
                 border-left: 4px solid #37e6ab;
                 .event-stage {
                     color: #37e6ab;
                 }
             }
-            &.Kollectiff {
+            &.Kolectiff-Catwalk {
                 border-left: 4px solid #e53b0d;
                 .event-stage {
                     color: #e53b0d;
                 }
             }
-            &.MetaTokyo {
+            &.MetaTokyo-Zone {
                 border-left: 4px solid gray;
                 .event-stage {
                     color: gray;
@@ -95,7 +95,7 @@ const StyledDayEvents = styled.section`
                     color: #ffd900;
                 }
             }
-            &.MetaParty {
+            &.Parcel-Metaparty-Community-Precint {
                 border-left: 4px solid ${props => props.theme.color.red};
                 .event-stage {
                     color: ${props => props.theme.color.red};
@@ -133,10 +133,19 @@ const StyledDayEvents = styled.section`
     }
     @media screen and (max-width: ${props => props.theme.breakpoints.m}) {
         padding-left: 0;
+        margin-top: 18px;
         ul {
             li {
+                background: white;
+                padding: 16px 16px;
+                border-radius: 4px;
+                margin-bottom: 8px;
+                .time {
+                    font-size: 12px;
+                    font-weight: 300;
+                }
                 .event-name {
-                    font-size: 24px;
+                    font-size: 22px;
                 } 
                 .event-stage {
                     font-size: 18px;

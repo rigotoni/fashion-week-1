@@ -21,7 +21,7 @@ const EventInfo = props => {
                     <Container size="large" flexDirection="column">
                         <div className="info-block">
                             <div className="event-info-content" data-aos="fadeInUp">
-                                <h2>EVERYONE'S A<br/> V.I.P IN THE METAVERSE</h2>
+                                <h2>EVERYONE'S A<br/> V.I.P. IN THE METAVERSE</h2>
                                 <p>
                                 DIVE INTO FOUR DAYS OF RUNWAY SHOWS,<br/> AFTER PARTIES, SHOPPING, AND PANEL TALKS. 
                                 </p>

@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import styled from 'styled-components';
-// import Aos from 'aos';
-// import 'aos/dist/aos.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Rellax from 'rellax';
 
 import Navbar from './../components/Navbar';
@@ -17,12 +17,10 @@ import LowerBanner from '../components/LowerBanner';
 export default function Home() {
 
 	useEffect(() => {
-		// Aos.init();
+		Aos.init();
 		new Rellax('.rellax', {
 			speed: -2,
 			center: true,
-
-
 		});
 	}, []);
 

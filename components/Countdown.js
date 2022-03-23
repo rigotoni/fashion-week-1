@@ -12,7 +12,7 @@ const Countdown = props => {
 
     
     useEffect(() => {
-        let festivalDate = new Date('Mar 23, 2022 20:00:00');
+        let festivalDate = new Date('Mar 24, 2022 13:00:00');
         festivalDate = new Date(festivalDate);
         festivalDate.setUTCHours(8);
         const UTCFestivalDate = new Date(festivalDate.toUTCString()).getTime();
@@ -20,7 +20,6 @@ const Countdown = props => {
         let interval = setInterval(() => {
         let now = new Date().getTime();
         let t = UTCFestivalDate - now;
-        // console.log(t);
         let days, hours, mins, secs;
         if (t >= 0) {
     
@@ -45,7 +44,7 @@ const Countdown = props => {
     
     return (
         <StyledCountdown>
-            <CTA href="">CHECK IT OUT</CTA>
+            <CTA href="#zones">CHECK IT OUT</CTA>
             <span className="countdown-text">in</span>
             <section className="countdown">
                 <div className="time-block days-wrapper">
