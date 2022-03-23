@@ -13,6 +13,7 @@ const scheduleData = {
                     time: '09:00 PM GMT',
                     name: 'Selfridges Opening',
                     stage: 'Independent',
+                    url: 'https://play.decentraland.org/?island=Iayf&position=63%2C15'
                 },
             ]   
         }
@@ -24,106 +25,133 @@ const scheduleData = {
                     time: '01:00 PM GMT',
                     name: 'Panel Talk: Future of Commerce / Decentralizing Commerce',
                     stage: 'Boson Portal',
+                    url: null
                 },
                 {
                     time: '01:00 PM GMT',
                     name: 'MetaTokyo Zone Opening',
                     stage: 'MetaTokyo Zone',
+                    url: 'https://events.decentraland.org/event/?id=e95c5ce9-ca0e-46de-8bb2-4cecd875879a'
                 },
                 {
                     time: '02:00 PM GMT',
                     name: 'MVFW Fashion Design Exhibition',
                     stage: 'Dragon City',
+                    url: 'https://events.decentraland.org/event/?id=a65cddd1-73f8-487d-95c5-7090dd379b9a'
                 },
                 {
                     time: '02:00 PM GMT',
                     name: '#DragonStyle Selfie Contest',
                     stage: 'Dragon City',
+                    url: 'https://events.decentraland.org/event/?id=a65cddd1-73f8-487d-95c5-7090dd379b9a'
                 },
                 {
                     time: '02:00 PM GMT',
                     name: 'Known Origin Exhibition + DJ Set 6pm GMT',
                     stage: 'Independent',
+                    url: null
                 },
                 {
                     time: '02:00 PM GMT',
                     name: 'Enter the Metaverse; Dressing our Avatars',
                     stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=c612baa2-e0f0-40fa-a1b5-c2ee6ab216c3'
                 },
                 {
                     time: '04:00 PM GMT',
                     name: 'UNXD Luxury District Opening',
                     stage: 'UNXD Luxury District',
+                    url: null
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'Catwalk: Perry Ellis',
                     stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '03:30 PM GMT',
                     name: 'Catwalk: IKKS',
                     stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'Christine Massarany',
                     stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '04:00 PM GMT',
                     name: 'UNXD Luxury District Opening',
                     stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=60a6ddef-b6fc-49f1-9b6f-0cb3fc868c13'
+                },
+                {
+                    time: '04:00 PM GMT',
+                    name: 'Welcome to MVFW with Cathy Hackl ',
+                    stage: 'Threedium Mall',
+                    url: 'https://events.decentraland.org/event/?id=60a6ddef-b6fc-49f1-9b6f-0cb3fc868c13'
                 },
                 {
                     time: '05:00 PM GMT',
                     name: 'Dolce&Gabbana +UNXD Catwalk',
                     stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=8f2902ca-8e1b-4d79-a145-403ebc52fb14'
                 },
                 {
                     time: '06:00 PM GMT',
                     name: 'Rarible Fresh Drip Zone',
                     stage: 'Rarible',
+                    url: 'https://events.decentraland.org/event/?id=6b7ffb70-5844-4a9a-992e-8e1933346501'
                 },
                 {
                     time: '07:00 PM GMT',
                     name: 'Fashion on Film; Consuming Fashion Virtually',
                     stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=201a9d30-8c27-4bdc-8117-e6ba6f1d0f4c'
                 },
                 {
                     time: '07:30 PM GMT',
                     name: 'Mini Games',
-                    stage: 'Parcel-Metaparty Community Precint',
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Phillip Plein Runway + Night Party',
                     stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=d4203ca5-3eb0-43eb-8957-e9f1a8300cab'
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Parcel-MetaParty Community Precinct Opening',
-                    stage: 'Parcel-Metaparty Community Precint',
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: 'https://events.decentraland.org/event/?id=f4896eac-7265-4874-8280-2e5a14c6db3d'
                 },
                 {
                     time: '09:00 PM GMT',
                     name: 'Acura (car brand) with playlist',
                     stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '09:00 PM GMT',
                     name: 'Body Architecture',
                     stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=3e0e806f-6427-4844-957e-6e7eb19e7a41'
                 },
                 {
                     time: '10:00 PM GMT',
                     name: 'Interview with Michi Todd',
-                    stage: 'Parcel-Metaparty Community Precint',
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '11:00 PM GMT',
                     name: 'Interview with DecentralWear // 10:40pm UTC: Mike Salvis 10 minute comedy set',
-                    stage: 'Parcel-Metaparty Community Precint',
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
             ]   
         }
@@ -134,87 +162,116 @@ const scheduleData = {
                 {
                     time: '01:00 PM GMT',
                     name: 'Panel Talk: Metaverse Fashion: Digital to Physical ',
-                    stage: 'Boson Portal'
+                    stage: 'Boson Portal',
+                    url: null
                 },
                 {
                     time: '01:00 PM GMT',
                     name: 'Panel Talk: NFTs with Superpowers',
-                    stage: 'Boson Portal'
+                    stage: 'Boson Portal',
+                    url: null
                 },
                 {
                     time: '02:00 PM GMT',
                     name: 'Ecommerce & The Metaverse',
-                    stage: 'Cash Labs Space'
+                    stage: 'Cash Labs Space',
+                    url: 'https://play.decentraland.org/?position=95%2C-117'
+                },
+                {
+                    time: '02:00 PM GMT',
+                    name: 'Metaloop Day 2 Catwalk: MTA X DressX | The Rebels | Dazzle (2 PM)e',
+                    stage: 'Kollectiff Catwalk ',
+                    url: null
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'Etro (UNXD) Catwalk Show',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=9b51d275-e4c5-411d-8ceb-33d36a4ff410'
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'MTA X DressX',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: null
                 },
                 {
                     time: '03:30 PM GMT',
                     name: 'Anrealage',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: null
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'Panel Talk: Fireside chat with Mr Tommy Hilfiger',
-                    stage: 'Boson Portal'
+                    stage: 'Boson Portal',
+                    url: null
                 },
                 {
                     time: '04:00 PM GMT',
                     name: 'Creating Fashion outside the confines of Reality',
-                    stage: 'Cash Labs Space'
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=847bcbff-a9c7-4ded-a2db-4da04d4bb23e'
                 },
                 {
                     time: '04:00 PM GMT',
                     name: '8SIAN',
-                    stage: 'Kolectiff Catwalk'
+                    stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '05:00 PM GMT',
                     name: 'Threedium Mall Opening',
-                    stage: 'Threedium Mall'
+                    stage: 'Threedium Mall',
+                    url: 'https://events.decentraland.org/event/?id=19fdd27a-fe9f-4858-8f8a-7151ea6d64b0'
                 },
                 {
                     time: '06:00 PM GMT',
                     name: 'Placebo Catwalk Show',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=17480173-5845-4ec7-85ef-2674e14ae526'
+                },
+                {
+                    time: '07:00 PM GMT',
+                    name: 'Kollectiff Catwalk Opening',
+                    stage: 'Kollectiff Catwalk',
+                    url: 'https://events.decentraland.org/event/?id=e11f9120-f533-4f74-98ca-e013058e271b'
                 },
                 {
                     time: '07:30 PM GMT',
                     name: 'Mini Games',
-                    stage: 'Parcel-Metaparty Community Precint',
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Boson Portal Opening',
-                    stage: 'Boson Portal'
+                    stage: 'Boson Portal',
+                    url: 'https://events.decentraland.org/event/?id=7877d896-b94b-4d71-aa19-758d28561a34'
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Boson Portal Opening',
-                    stage: 'Parcel-Metaparty Community Precint'
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '09:00 PM GMT',
                     name: 'Closing Party Tribute Brand + ICYKOF',
-                    stage: 'Independent'
+                    stage: 'Independent',
+                    url: 'https://events.decentraland.org/event/?id=5079ea6f-247b-46ca-964b-f42567a78491'
                 },
                 {
                     time: '09:00 PM GMT',
                     name: 'After Party',
-                    stage: 'Kolectiff Catwalk'
+                    stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '09:00 PM GMT',
-                    name: 'Charlie Cohen\'s Electrict City powered by Yahoo',
-                    stage: 'Independent'
+                    name: 'The Initiation: a Charli Cohen x RSTLSS Experience, presented by Yahoo ',
+                    stage: 'Independent',
+                    url: 'https://events.decentraland.org/event/?id=c245a2f2-9c5c-4d41-a68a-274c353dac24'
                 },
             ]   
         }
@@ -225,77 +282,92 @@ const scheduleData = {
                 {
                     time: '01:00 PM GMT',
                     name: 'Opening',
-                    stage: 'Dragon City'
+                    stage: 'Dragon City',
+                    url: 'https://play.decentraland.org/?position=95%2C-117'
                 },
                 {
                     time: '02:00 PM GMT',
                     name: 'Phygital Fashion',
-                    stage: 'Cash Labs Space'
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=addb3915-38da-47c7-9019-ef290a68fb85'
                 },
                 {
                     time: '03:00 PM GMT',
-                    name: 'Catwalk Night',
-                    stage: 'Dragon City'
+                    name: 'Dragon City Catwalk Night',
+                    stage: 'Dragon City',
+                    url: 'https://events.decentraland.org/event/?id=4e63909a-c44f-45c5-9ae5-6b914d23eb0c'
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'Cider',
-                    stage: 'Kolectiff Catwalk'
+                    stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'Virtual Couture; Digitizing High Fashion',
-                    stage: 'Cash Labs Space'
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=e1ce4cec-05a6-4877-96c7-45134a4bb2ed'
                 },
                 {
                     time: '04:00 PM GMT',
                     name: 'The Rebels',
-                    stage: 'Kolectiff Catwalk'
+                    stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '05:00 PM GMT',
                     name: 'Vogu & Hype Catwalk Show',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=28719fea-18ab-49be-b9f4-2c807d0e9a1d'
                 },
                 {
                     time: '06:00 PM GMT',
                     name: 'Fresh Couture Catwalk Show',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=ee01342e-b5eb-48a6-b2de-8e4eefcff89e'
                 },
                 {
                     time: '07:00 PM GMT',
                     name: 'Opening Party Hogan/Exclusible (Bob Sinclair)',
-                    stage: 'Independent'
+                    stage: 'Independent',
+                    url: 'https://events.decentraland.org/event/?id=78fb2393-5eaf-4d65-8dc5-b74245d4d0eb'
                 },
                 {
                     time: '07:30 PM GMT',
                     name: 'Mini Games',
-                    stage: 'Parcel-Metaparty Community Precint',
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Creating Fashion Imagery',
-                    stage: 'Cash Labs Space'
+                    stage: 'Cash Labs Space',
+                    url: null
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Interview with Parcel',
-                    stage: 'Parcel-Metaparty Community Precint'
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Wearables Competition Winners Catwalk Show',
-                    stage: 'Parcel-Metaparty Community Precint'
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '09:00 PM GMT',
                     name: 'Nicki Nicole After Party',
-                    stage: 'Kolectiff Catwalk'
+                    stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '10:00 PM GMT',
                     name: 'Interview with Yanniks',
-                    stage: 'Parcel-Metaparty Community Precint'
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
             ]   
         }
@@ -306,82 +378,98 @@ const scheduleData = {
                 {
                     time: '02:00 PM GMT',
                     name: 'MetaJam Award Ceremony',
-                    stage: 'Dragon City'
+                    stage: 'Dragon City',
+                    url: 'https://events.decentraland.org/event/?id=a65cddd1-73f8-487d-95c5-7090dd379b9a'
                 },
                 {
                     time: '02:00 PM GMT',
                     name: 'Estée Lauder',
-                    stage: 'Independent'
+                    stage: 'Independent',
+                    url: 'https://events.decentraland.org/event/?id=4fa07fa0-61e1-4415-a01c-9172896ac138'
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'NounsDAO',
-                    stage: 'Kolectiff Catwalk'
+                    stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'Opening Party: Faith Connexion & Blond:ish',
-                    stage: 'Independent'
+                    stage: 'Independent',
+                    url: 'https://events.decentraland.org/event/?id=602430cf-ec89-4017-b4fb-900b9d184072'
                 },
                 {
                     time: '04:00 PM GMT',
                     name: 'Sustainability & Fashion',
-                    stage: 'Cash Labs Space'
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=8826165a-cb06-4ab1-b361-bebe3ab2bf30'
                 },
                 {
                     time: '04:00 PM GMT',
                     name: 'The Metaverse Travel Agency',
-                    stage: 'Kolectiff Catwalk'
+                    stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '07:00 PM GMT',
                     name: 'Gary McQueen',
-                    stage: 'Independent'
+                    stage: 'Independent',
+                    url: null
                 },
                 {
                     time: '07:00 PM GMT',
                     name: 'The Fabricant Catwalk Show',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: null
                 },
                 {
                     time: '07:00 PM GMT',
                     name: 'The Fabricant Catwalk Show',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=2207a1e3-c793-4110-ac27-1bf2d6b9ddce'
                 },
                 {
                     time: '07:30 PM GMT',
                     name: 'Mini Games',
-                    stage: 'Parcel-Metaparty Community Precint',
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Dundas (UNXD) Catwalk Show',
-                    stage: 'UNXD Luxury District'
+                    stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=d10f2212-554a-4ac6-b822-961aa6d9a045'
                 },
                 {
                     time: '08:00 PM GMT',
                     name: 'Music, Performances & Introduction',
-                    stage: 'Parcel-Metaparty Community Precint'
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
                 {
                     time: '09:00 PM GMT',
                     name: 'After Party',
-                    stage: 'Kolectiff Catwalk'
+                    stage: 'Kolectiff Catwalk',
+                    url: null
                 },
                 {
                     time: '09:00 PM GMT',
                     name: 'The History & Future of Virtual Fashion',
-                    stage: 'Cash Labs Space'
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=49488809-253b-4736-a056-d35c13504eb8'
                 },
                 {
                     time: '10:00 PM GMT',
                     name: 'UNXD - Auroboros Closing Party',
-                    stage: 'Independent'
+                    stage: 'Independent',
+                    url: null
                 },
                 {
                     time: '11:00 PM GMT',
                     name: 'Interview with Fansoid',
-                    stage: 'Parcel-Metaparty Community Precint'
+                    stage: 'Parcel-Metaparty Community Precinct',
+                    url: null
                 },
             ]   
         }
