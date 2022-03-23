@@ -9,7 +9,7 @@ const Event = (props) => {
             <div className="event-footer">
                 <span className="event-stage">{props.event.stage}</span>
                 {props.event.url && (
-                    <a className="event-info" href={props.event.url} target="_blank" rel="noopener roreferrer">
+                    <a className="event-info" href={props.event.url} target="_blank" rel="noreferrer">
                         Click for More Info
                     </a>
                 )}
@@ -27,7 +27,7 @@ const DayEvents = props => {
                     <ul>
                         {dayData.events.map((event, index) => (
                             event.url ? (
-                                <a href={event.url} target="_blank" rel="noopener roreferrer">
+                                <a href={event.url} target="_blank" rel="noreferrer">
                                     <Event event={event} key={index} />
                                 </a>
 

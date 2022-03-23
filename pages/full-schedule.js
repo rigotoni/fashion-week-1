@@ -20,7 +20,7 @@ const Event = (props) => {
             </span>
             {props.event.url && (
                 <div className="event-footer">
-                    <a className="event-info" href={props.event.url} target="_blank" rel="noopener roreferrer">
+                    <a className="event-info" href={props.event.url} target="_blank" rel="noreferrer">
                         Click for More Info
                     </a>
                 </div>
@@ -562,7 +562,7 @@ export default function Home() {
                                                     {day.timeslots[timeslot] && 
                                                     day.timeslots[timeslot].map((event, key) => (
                                                         event.url ? (
-                                                            <a key={key} href="" target="_blank" rel="noopener noreferrer">
+                                                            <a key={key} href="" target="_blank" rel="noreferrer">
                                                                 <Event event={event}/>
                                                             </a>
                                                         ) : (
@@ -597,7 +597,7 @@ export default function Home() {
                                                         {day.timeslots[timeslot] && 
                                                         day.timeslots[timeslot].map((event, key) => (
                                                             event.url ? (
-                                                                <a key={key} href="" target="_blank" rel="noopener noreferrer">
+                                                                <a key={key} href="" target="_blank" rel="noreferrer">
                                                                     <Event event={event}/>
                                                                 </a>
                                                             ) : (
