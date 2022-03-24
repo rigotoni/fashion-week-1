@@ -41,7 +41,7 @@ export default function Home() {
 					<TextBanner />
 					<EventSchedule />
 					<LowerBanner />
-					<Zones />
+					<Zones showTitle/>
 				</main>
 			</StyledHome>
 

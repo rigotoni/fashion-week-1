@@ -33,13 +33,13 @@ const Marquees = [
         },
         {
             name: 'CashLabs',
-            coordinate: [-80, -57],
+            coordinate: [73, 15],
             imgUrl: '/CashLabs.png'
         },
     ],
     [
         {
-            name: 'Metaloop',
+            name: 'Metaloop by Kollectiff',
             coordinate: [94, -13],
             imgUrl: '/Kollectiff.png'
         },
@@ -50,7 +50,7 @@ const Marquees = [
         },
         {
             name: 'Metaparty',
-            coordinate: [95, -117],
+            coordinate: [2, 16],
             imgUrl: '/Metaparty.png'
         },
         {
@@ -75,9 +75,13 @@ const Zones = props => {
     return (
         <StyledZones size="full" id="zones">
             <Container size="full" className="zones-container" flexDirection={"column"}>
-                <Container size="large">
-                    <h2>ZONES</h2>
-                </Container>
+                {
+                    props.showTitle && (
+                        <Container size="large">
+                            <h2>ZONES</h2>
+                        </Container>
+                    )
+                }
                 <Container size="full" className="marquee-wrapper" flexDirection="column">
                     {Marquees.map((marquee, index) => (
                         <Marquee
