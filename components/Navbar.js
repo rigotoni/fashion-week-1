@@ -29,8 +29,8 @@ const Navbar = props => {
                                 e.preventDefault; 
                                 setIsMobileOpen(false);
                             }}
-                            href={'/#about'}>
-                                About
+                            href={'/how-to-enter-decentraland'}>
+                                How to Enter Decentraland
                             </a>
                         </li>
                         <li>

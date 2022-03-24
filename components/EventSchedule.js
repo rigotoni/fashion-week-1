@@ -91,7 +91,7 @@ const scheduleData = {
                     time: '04:00 PM GMT',
                     name: 'Welcome to MVFW with Cathy Hackl ',
                     stage: 'Threedium Mall',
-                    url: 'https://events.decentraland.org/event/?id=60a6ddef-b6fc-49f1-9b6f-0cb3fc868c13'
+                    url: 'https://events.decentraland.org/event/?id=bdb9a5bd-2323-40d7-8a06-966446d7879a'
                 },
                 {
                     time: '05:00 PM GMT',
@@ -478,7 +478,7 @@ const scheduleData = {
 
 const EventSchedule = props => {
 
-    const [selectedDay, setSelectedDay] = useState(0);
+    const [selectedDay, setSelectedDay] = useState(1);
 
     return (
         <StyledEventSchedule size="full" flexDirection="column" className="schedule-info" id="full-schedule">

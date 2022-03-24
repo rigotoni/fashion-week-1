@@ -8,6 +8,7 @@ const Container = (props) => {
 		flex,
 		flexDirection,
 		children,
+		column,
 		className,
 		dataAos,
 		id
@@ -18,11 +19,11 @@ const Container = (props) => {
 			padding={padding} 
 			margin={margin} 
 			flex={flex}
-			flexDirection={flexDirection}
+			flexDirection={column ? 'column' : flexDirection ? flexDirection : 'row'}
 			dataAos={dataAos}
 			id={id}
 		>
-				{props.children}
+				{children}
 		</StyledContainer>
 	)
 }
