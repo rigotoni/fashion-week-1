@@ -62,20 +62,24 @@ export default function Home() {
 
 
                                                 </p>
-                                                <p>
-                                                    On the <a href="http://mvfw.org" target="_blank" rel="noreferrer">main MVFW landing page</a>, below the Agenda, you’ll see a scrolling gallery of the different MVFW Zones. If you click on one (such as Kollectiff - Metaloop) it will take you to that area in Decentraland.
-                                                </p>
                                             </li>
                                         </ol>
                                     </div>
                                 </div>
                             </div>
                         </Container>
-                        <Zones />
+                        <Zones showTitle />
                         <Container size="large" column className="info-container">
                             <div className="info-content">
                                 <div className="steps">
                                     <div className="step">
+                                        <p>
+                                            Once you decide where you want enter Decentraland, you’ll be taken to the page shown below where you’ll have to decide whether you want to create a Decentraland account by connecting a digital wallet or enter as a guest:
+
+                                        </p>
+                                        <p>
+                                            <NextImage width={760} height={400} src="/enter-decentraland.png" />
+                                        </p>
                                         <p>
                                             <h3>
                                                 <strong>Play Using Wallet</strong>
@@ -104,7 +108,7 @@ export default function Home() {
                                             <strong>Note:</strong> If you chose ‘Play as Guest,’ don’t get too attached to your avatar as you won’t be able to properly save your creation after logging out. Without an account, your avatar will only be saved in your browser’s data cache. If you want to permanently save your avatar, you’ll have to make a Decentraland account by linking a digital wallet.
                                         </p>
                                         <p>
-                                            <NextImage width={760} height={400} src="/enter-decentraland.png" />
+                                            <NextImage width={760} height={400} src="/avatar.png" />
                                         </p>
                                         <p>
                                             Once you’re done creating your virtual self, click ‘Done’ and you’ll be taken to a page where you can type in what you’d like your name to be in Decentraland. Next, accept the Decentraland terms of service and you’ll be whirled away to the virtual world before you can say Metaverse Fashion Week 2022!
@@ -272,9 +276,10 @@ const StyledHome = styled.main`
                                     margin-right: 12px;
                                     font-family: monospace;
                                     color: lightgray;
-                                    text-align: center;
+                                    text-align: left;
                                     font-size: 16px;
-                                    width: fit-content;
+                                    width: 100%;
+                                    max-width: 380px;
                                 }
                             }
                         }
@@ -312,6 +317,8 @@ const StyledHome = styled.main`
                     margin-bottom: 60px;
                     display: inline-block;
                     border-bottom: 8px solid ${props => props.theme.color.red};
+                    font-family: Staatliches;
+                    letter-spacing: 0.1em;
                 }
                 p {
                     margin-bottom: 40px;
@@ -333,6 +340,9 @@ const StyledHome = styled.main`
         }
         #zones {
             margin-bottom: 80px;
+            h2 {
+                font-family: Staatliches;
+            }
         }
     }
 `;
