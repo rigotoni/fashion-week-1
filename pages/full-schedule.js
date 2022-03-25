@@ -43,7 +43,8 @@ export default function Home() {
 	}, []);
 
     let timeslots = [
-        '12:30am',
+        '12pm',
+        '12:30pm',
         '13pm',
         '14pm',
         '15pm',
@@ -679,6 +680,7 @@ const StyledHome = styled.main`
         h1 {
             font-size: 80px;
             text-align: center;
+            letter-spacing: 0.1em;
         }
         .mobile {
             display: none;
@@ -747,7 +749,7 @@ const StyledHome = styled.main`
                     }
                 }
                 .events {
-                    padding: 24px 0;
+                    padding: 12px 0;
                     display: flex;
                     flex-grow: 1;
                     border-top: 1px dashed lightgray;
