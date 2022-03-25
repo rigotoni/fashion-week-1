@@ -27,8 +27,8 @@ const DayEvents = props => {
                     <ul>
                         {dayData.events.map((event, index) => (
                             event.url ? (
-                                <a href={event.url} target="_blank" rel="noreferrer">
-                                    <Event event={event} key={index} />
+                                <a key={index} href={event.url} target="_blank" rel="noreferrer">
+                                    <Event event={event} />
                                 </a>
 
                             ) : (
