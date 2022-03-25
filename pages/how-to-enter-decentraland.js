@@ -55,9 +55,11 @@ export default function Home() {
                                                     To jump into Genesis Plaza, follow <a href="https://play.decentraland.org/" target="_blank" rel="noreferrer">this link</a>
                                                 </p>
                                             </li>
+                                            <strong>OR</strong>
                                             <li>
                                                 <p>
-                                                    <strong>You can enter Decentraland directly</strong> in your area of interest. For example, say you want to go to the Kolectiff Catwalk to see the Perry Ellis runway show. To attend the event you’ll have to go to the Kolectiff area of Decentraland.  
+                                                    <strong>You can enter Decentraland directly</strong> in your area of interest. For example, say you want to go to the Kolectiff Catwalk to see the Perry Ellis runway show. To attend the event you’ll have to go to the Kolectiff area of Decentraland. Below you’ll see a scrolling gallery of different MVFW Zones. If you click on one (such as Kollectiff - Metaloop) it will take you to that area in Decentraland.
+
 
                                                 </p>
                                                 <p>
@@ -65,11 +67,6 @@ export default function Home() {
                                                 </p>
                                             </li>
                                         </ol>
-                                        <p className="large-paragraph">
-                                            <strong>
-                                                We’ve also compiled this easy-to-access list of location links for you to jump into the place you want to get to in Decentraland:
-                                            </strong>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -77,6 +74,26 @@ export default function Home() {
                         <Zones />
                         <Container size="large" column className="info-container">
                             <div className="info-content">
+                                <div className="steps">
+                                    <div className="step">
+                                        <p>
+                                            <h3>
+                                                <strong>Play Using Wallet</strong>
+                                            </h3>
+                                                <p>
+                                                    If you want the full experience of Decentraland, for example if you wanted to buy something special to wear during MVFW, or wanted to permanently save your avatar for return visits to Decentraland, we recommend connecting a digital wallet. To learn more about what that means and how to do it, read this short <a href="http://mvfw.org" target="_blank" rel="noreferrer">article</a>.
+                                                </p>
+                                        </p>
+                                        <p>
+                                            <h3>
+                                                <strong>Play as Guest</strong>
+                                            </h3>
+                                                <p>
+                                                If you choose to enter Decentraland as a guest, you’ll be able to jump right into the world without any other obstacles.
+                                                </p>
+                                        </p>
+                                    </div>
+                                </div>
                                 <div className="steps">
                                     <div className="step">
                                         <h2>Step 2: Design Your Avatar</h2>
@@ -96,7 +113,8 @@ export default function Home() {
                                     <div className="step">
                                         <h2>Step 3: Explore!</h2>
                                         <p>
-                                            Once you decide where you want enter Decentraland, you’ll be taken to the page shown below where you’ll have to decide whether you want to create a Decentraland account by connecting a digital wallet or enter as a guest:
+                                            Once you’re in the virtual world of Decentraland, you can walk around using the arrow keys or the ‘WASD’ keys on your keyboard and use your mouse to look around. To see a map of Decentraland quickly, click ‘M’ on your keyboard to open a map. From there you can click on any location of the map to teleport to that specific area. 
+
                                         </p>
                                         <p>
                                             Another useful key for you during the event will be ’X’. Clicking ‘X’ will open up an interface that will show you different events that are happening or scheduled in Decentraland. During MWFW, after clicking ‘X’, click on ‘Events’ near the top of your screen. You should then see all the MVFW events that are planned and happening. If you see the option to ‘Jump In’, the event is active and you can teleport there. If the event says ‘Want to Go’, then it hasn’t started yet. Using this function might be the easiest way for newcomers to Decentraland to navigate for the purposes of MVFW.
@@ -193,7 +211,6 @@ export default function Home() {
                                             </ul>
                                             <p className="large-paragraph">
                                                 <strong>Good luck and have fun exploring Decentraland and Metaverse Fashion Week!</strong>
-
                                             </p>
                                         </p>
                                     </div>
