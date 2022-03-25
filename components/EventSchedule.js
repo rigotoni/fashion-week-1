@@ -66,19 +66,19 @@ const scheduleData = {
                 {
                     time: '03:00 PM GMT',
                     name: 'Catwalk: Perry Ellis',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
                     time: '03:30 PM GMT',
                     name: 'Catwalk: IKKS',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
                     time: '03:00 PM GMT',
                     name: 'Christine Massarany',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
@@ -132,7 +132,7 @@ const scheduleData = {
                 {
                     time: '09:00 PM GMT',
                     name: 'Acura (car brand) with playlist',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
@@ -160,10 +160,22 @@ const scheduleData = {
         {
             events: [
                 {
-                    time: '01:00 PM GMT',
-                    name: 'Panel Talk: Metaverse Fashion: Digital to Physical ',
+                    time: '12:00 PM GMT',
+                    name: 'Metaverse Fashion: Digital to Physical',
                     stage: 'Boson Portal',
-                    url: null
+                    url: 'https://events.decentraland.org/event/?id=905daf24-e5b7-4d11-a1b0-d0754d1171b1'
+                },
+                {
+                    time: '12:30 AM GMT',
+                    name: 'Opening Panel Talk: Alexandre de Betak + David Cash',
+                    stage: 'Cash Labs Space',
+                    url: 'Opening  Panel Talk: Alexandre de Betak + David Cash'
+                },
+                {
+                    time: '01:00 PM GMT',
+                    name: 'Panel Talk: Enter the Metaverse; Dressing our Avatars',
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=49488809-253b-4736-a056-d35c13504eb8'
                 },
                 {
                     time: '01:00 PM GMT',
@@ -184,6 +196,12 @@ const scheduleData = {
                     url: null
                 },
                 {
+                    time: '02:00 PM GMT',
+                    name: 'Panel Talk: Fireside chat with Mr Tommy Hilfiger',
+                    stage: 'Boson Portal',
+                    url: 'https://events.decentraland.org/event/?id=905daf24-e5b7-4d11-a1b0-d0754d1171b1'
+                },
+                {
                     time: '03:00 PM GMT',
                     name: 'Etro (UNXD) Catwalk Show',
                     stage: 'UNXD Luxury District',
@@ -202,12 +220,6 @@ const scheduleData = {
                     url: null
                 },
                 {
-                    time: '03:00 PM GMT',
-                    name: 'Panel Talk: Fireside chat with Mr Tommy Hilfiger',
-                    stage: 'Boson Portal',
-                    url: null
-                },
-                {
                     time: '04:00 PM GMT',
                     name: 'Creating Fashion outside the confines of Reality',
                     stage: 'Cash Labs Space',
@@ -216,8 +228,14 @@ const scheduleData = {
                 {
                     time: '04:00 PM GMT',
                     name: '8SIAN',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
+                },
+                {
+                    time: '05:00 PM GMT',
+                    name: 'Film Session',
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=905daf24-e5b7-4d11-a1b0-d0754d1171b1'
                 },
                 {
                     time: '05:00 PM GMT',
@@ -264,7 +282,7 @@ const scheduleData = {
                 {
                     time: '09:00 PM GMT',
                     name: 'After Party',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
@@ -286,6 +304,12 @@ const scheduleData = {
                     url: 'https://play.decentraland.org/?position=95%2C-117'
                 },
                 {
+                    time: '01:00 PM GMT',
+                    name: 'Digitizing Fashion: A Conversation with Nick Knight',
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=ba42ec02-43bc-436d-9799-7bb8098406c7'
+                },
+                {
                     time: '02:00 PM GMT',
                     name: 'Phygital Fashion',
                     stage: 'Cash Labs Space',
@@ -300,7 +324,7 @@ const scheduleData = {
                 {
                     time: '03:00 PM GMT',
                     name: 'Cider',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
@@ -312,7 +336,7 @@ const scheduleData = {
                 {
                     time: '04:00 PM GMT',
                     name: 'The Rebels',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
@@ -320,6 +344,12 @@ const scheduleData = {
                     name: 'Vogu & Hype Catwalk Show',
                     stage: 'UNXD Luxury District',
                     url: 'https://events.decentraland.org/event/?id=28719fea-18ab-49be-b9f4-2c807d0e9a1d'
+                },
+                {
+                    time: '05:00 PM GMT',
+                    name: 'Film Session',
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=ba42ec02-43bc-436d-9799-7bb8098406c7'
                 },
                 {
                     time: '06:00 PM GMT',
@@ -360,7 +390,7 @@ const scheduleData = {
                 {
                     time: '09:00 PM GMT',
                     name: 'Nicki Nicole After Party',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
@@ -390,7 +420,7 @@ const scheduleData = {
                 {
                     time: '03:00 PM GMT',
                     name: 'NounsDAO',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
@@ -408,8 +438,14 @@ const scheduleData = {
                 {
                     time: '04:00 PM GMT',
                     name: 'The Metaverse Travel Agency',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
+                },
+                {
+                    time: '05:00 PM GMT',
+                    name: 'Film Session',
+                    stage: 'Cash Labs Space',
+                    url: 'https://events.decentraland.org/event/?id=ba42ec02-43bc-436d-9799-7bb8098406c7'
                 },
                 {
                     time: '07:00 PM GMT',
@@ -450,7 +486,7 @@ const scheduleData = {
                 {
                     time: '09:00 PM GMT',
                     name: 'After Party',
-                    stage: 'Kolectiff Catwalk',
+                    stage: 'Kollectiff Catwalk',
                     url: null
                 },
                 {
@@ -462,8 +498,8 @@ const scheduleData = {
                 {
                     time: '10:00 PM GMT',
                     name: 'UNXD - Auroboros Closing Party',
-                    stage: 'Independent',
-                    url: null
+                    stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=fcfec6c4-74aa-4553-b610-a334562084b4'
                 },
                 {
                     time: '11:00 PM GMT',

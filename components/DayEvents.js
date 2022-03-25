@@ -131,7 +131,7 @@ const StyledDayEvents = styled.section`
                     color: #37e6ab;
                 }
             }
-            &.Kolectiff-Catwalk {
+            &.Kollectiff-Catwalk {
                 border-left: 4px solid #e53b0d;
                 .event-stage {
                     color: #e53b0d;

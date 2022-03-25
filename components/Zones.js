@@ -64,7 +64,7 @@ const Marquees = [
             imgUrl: '/Luxury District.png'
         },
         {
-            name: 'Boson Protocol',
+            name: 'Boson Portal',
             coordinate: [-86, 108],
             imgUrl: '/Boson.png'
         },

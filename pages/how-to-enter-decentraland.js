@@ -58,7 +58,7 @@ export default function Home() {
                                             <strong>OR</strong>
                                             <li>
                                                 <p>
-                                                    <strong>You can enter Decentraland directly</strong> in your area of interest. For example, say you want to go to the Kolectiff Catwalk to see the Perry Ellis runway show. To attend the event you’ll have to go to the Kolectiff area of Decentraland. Below you’ll see a scrolling gallery of different MVFW Zones. If you click on one (such as Kollectiff - Metaloop) it will take you to that area in Decentraland.
+                                                    <strong>You can enter Decentraland directly</strong> in your area of interest. For example, say you want to go to the Kollectiff Catwalk to see the Perry Ellis runway show. To attend the event you’ll have to go to the Kollectiff area of Decentraland. Below you’ll see a scrolling gallery of different MVFW Zones. If you click on one (such as Kollectiff - Metaloop) it will take you to that area in Decentraland.
 
 
                                                 </p>
