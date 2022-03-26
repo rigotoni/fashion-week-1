@@ -602,18 +602,18 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="schedule-body">
-                                {timeslots.map((timeslot) => (
-                                    <div key={timeslot} className="hour-row">
+                                {timeslots.map((timeslot, key) => (
+                                    <div key={timeslot + key} className="hour-row">
                                         <div className="time">
                                             {timeslot} <br/>GMT
                                         </div>
                                         <div className="events">
-                                            {Schedule.map((day) => (
-                                                <div className={'timeslot-events'} key={day.dateName}>
+                                            {Schedule.map((day, key) => (
+                                                <div className={'timeslot-events'} key={day.dateName + key}>
                                                     {day.timeslots[timeslot] && 
                                                     day.timeslots[timeslot].map((event, key) => (
                                                         event.url ? (
-                                                            <a key={key} href="" target="_blank" rel="noreferrer">
+                                                            <a key={event.eventName} href="" target="_blank" rel="noreferrer">
                                                                 <Event event={event}/>
                                                             </a>
                                                         ) : (
