@@ -43,7 +43,8 @@ export default function Home() {
 	}, []);
 
     let timeslots = [
-        '12:30am',
+        '12pm',
+        '12:30pm',
         '13pm',
         '14pm',
         '15pm',
@@ -504,7 +505,13 @@ export default function Home() {
                         url: 'https://events.decentraland.org/event/?id=ba42ec02-43bc-436d-9799-7bb8098406c7'
                     }
                 ],
-                '18pm': null,
+                '18pm': [
+                    {
+                        eventName: 'Marc-O-Matic x Metakey Metropolis Show',
+                        location: 'UNXD Luxury District',
+                        url: 'https://events.decentraland.org/event/?id=fddca058-748a-4d39-bcd8-d0eeb98bf3d5'
+                    }
+                ],
                 '19pm': [
                     {
                         eventName: 'Gary McQueen',
@@ -595,18 +602,18 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="schedule-body">
-                                {timeslots.map((timeslot) => (
-                                    <div key={timeslot} className="hour-row">
+                                {timeslots.map((timeslot, key) => (
+                                    <div key={timeslot + key} className="hour-row">
                                         <div className="time">
                                             {timeslot} <br/>GMT
                                         </div>
                                         <div className="events">
-                                            {Schedule.map((day) => (
-                                                <div className={'timeslot-events'} key={day.dateName}>
+                                            {Schedule.map((day, key) => (
+                                                <div className={'timeslot-events'} key={day.dateName + key}>
                                                     {day.timeslots[timeslot] && 
                                                     day.timeslots[timeslot].map((event, key) => (
                                                         event.url ? (
-                                                            <a key={key} href="" target="_blank" rel="noreferrer">
+                                                            <a key={event.eventName} href="" target="_blank" rel="noreferrer">
                                                                 <Event event={event}/>
                                                             </a>
                                                         ) : (
@@ -679,6 +686,7 @@ const StyledHome = styled.main`
         h1 {
             font-size: 80px;
             text-align: center;
+            letter-spacing: 0.1em;
         }
         .mobile {
             display: none;
@@ -747,7 +755,7 @@ const StyledHome = styled.main`
                     }
                 }
                 .events {
-                    padding: 24px 0;
+                    padding: 12px 0;
                     display: flex;
                     flex-grow: 1;
                     border-top: 1px dashed lightgray;
