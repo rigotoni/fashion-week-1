@@ -505,7 +505,13 @@ export default function Home() {
                         url: 'https://events.decentraland.org/event/?id=ba42ec02-43bc-436d-9799-7bb8098406c7'
                     }
                 ],
-                '18pm': null,
+                '18pm': [
+                    {
+                        eventName: 'Marc-O-Matic x Metakey Metropolis Show',
+                        location: 'UNXD Luxury District',
+                        url: 'https://events.decentraland.org/event/?id=fddca058-748a-4d39-bcd8-d0eeb98bf3d5'
+                    }
+                ],
                 '19pm': [
                     {
                         eventName: 'Gary McQueen',

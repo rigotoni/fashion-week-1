@@ -448,6 +448,12 @@ const scheduleData = {
                     url: 'https://events.decentraland.org/event/?id=ba42ec02-43bc-436d-9799-7bb8098406c7'
                 },
                 {
+                    time: '06:00 PM GMT',
+                    name: 'Marc-O-Matic x Metakey Metropolis Show',
+                    stage: 'UNXD Luxury District',
+                    url: 'https://events.decentraland.org/event/?id=fddca058-748a-4d39-bcd8-d0eeb98bf3d5'
+                },
+                {
                     time: '07:00 PM GMT',
                     name: 'Gary McQueen',
                     stage: 'Independent',
