@@ -560,7 +560,7 @@ export default function Home() {
                 ],
                 '22pm': [
                     {
-                        eventName: 'UNXD - Auroboros Closing Party',
+                        eventName: 'Auroboros x Grimes Immersive Experience',
                         location: 'UNXD Luxury District',
                         url: 'https://events.decentraland.org/event/?id=fcfec6c4-74aa-4553-b610-a334562084b4'
                     },
