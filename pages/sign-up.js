@@ -54,7 +54,15 @@ export default function Home() {
                                                 <p>
                                                     To Sign up for Metaverse Fashion Week, follow <a href="https://play.decentraland.org/" target="_blank" rel="noreferrer">this link</a>
                                                 </p>
-                                            
+                                            </li>
+                                            <strong>OR</strong>
+                                            <li>
+                                                <p>
+                                                    
+
+
+                                                </p>
+                                            </li>
                                         </ol>
                                     </div>
                                 </div>
