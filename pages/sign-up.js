@@ -55,13 +55,159 @@ export default function Home() {
                                                     To Sign up for Metaverse Fashion Week, follow <a href="https://play.decentraland.org/" target="_blank" rel="noreferrer">this link</a>
                                                 </p>
                                             
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
                         </Container>
                         <Zones showTitle />
                         <Container size="large" column className="info-container">
                             <div className="info-content">
                                 <div className="steps">
                                     <div className="step">
-                                        
+                                        <p>
+                                            Once you decide where you want enter Decentraland, you’ll be taken to the page shown below where you’ll have to decide whether you want to create a Decentraland account by connecting a digital wallet or enter as a guest:
+
+                                        </p>
+                                        <p>
+                                            <NextImage width={760} height={400} src="/enter-decentraland.png" />
+                                        </p>
+                                        <p>
+                                            <h3>
+                                                <strong>Play Using Wallet</strong>
+                                            </h3>
+                                                <p>
+                                                    If you want the full experience of Decentraland, for example if you wanted to buy something special to wear during MVFW, or wanted to permanently save your avatar for return visits to Decentraland, we recommend connecting a digital wallet. To learn more about what that means and how to do it, read this short <a href="http://mvfw.org" target="_blank" rel="noreferrer">article</a>.
+                                                </p>
+                                        </p>
+                                        <p>
+                                            <h3>
+                                                <strong>Play as Guest</strong>
+                                            </h3>
+                                                <p>
+                                                If you choose to enter Decentraland as a guest, you’ll be able to jump right into the world without any other obstacles.
+                                                </p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="steps">
+                                    <div className="step">
+                                        <h2>Step 2: Design Your Avatar</h2>
+                                        <p>
+                                            After connecting your wallet or selecting ‘Play as Guest’, the next step will be to design and customize your avatar. Your avatar will represent you in Decentraland and is what other people will see when they interact with you. 
+                                        </p>
+                                        <p className="note">
+                                            <strong>Note:</strong> If you chose ‘Play as Guest,’ don’t get too attached to your avatar as you won’t be able to properly save your creation after logging out. Without an account, your avatar will only be saved in your browser’s data cache. If you want to permanently save your avatar, you’ll have to make a Decentraland account by linking a digital wallet.
+                                        </p>
+                                        <p>
+                                            <NextImage width={760} height={400} src="/avatar.png" />
+                                        </p>
+                                        <p>
+                                            Once you’re done creating your virtual self, click ‘Done’ and you’ll be taken to a page where you can type in what you’d like your name to be in Decentraland. Next, accept the Decentraland terms of service and you’ll be whirled away to the virtual world before you can say Metaverse Fashion Week 2022!
+                                        </p>
+                                    </div>
+                                    <div className="step">
+                                        <h2>Step 3: Explore!</h2>
+                                        <p>
+                                            Once you’re in the virtual world of Decentraland, you can walk around using the arrow keys or the ‘WASD’ keys on your keyboard and use your mouse to look around. To see a map of Decentraland quickly, click ‘M’ on your keyboard to open a map. From there you can click on any location of the map to teleport to that specific area. 
+
+                                        </p>
+                                        <p>
+                                            Another useful key for you during the event will be ’X’. Clicking ‘X’ will open up an interface that will show you different events that are happening or scheduled in Decentraland. During MWFW, after clicking ‘X’, click on ‘Events’ near the top of your screen. You should then see all the MVFW events that are planned and happening. If you see the option to ‘Jump In’, the event is active and you can teleport there. If the event says ‘Want to Go’, then it hasn’t started yet. Using this function might be the easiest way for newcomers to Decentraland to navigate for the purposes of MVFW.
+                                        </p>
+                                        <p>
+                                            Beyond that, you can just have fun walking around, exploring, and seeing where your journeys take you!
+                                        </p>
+                                        <p className="controls">
+                                            <strong>Here’s a summary of some useful keyboard commands:</strong>
+                                            <ul>
+                                                <li>
+                                                    <span className="command">
+                                                        W-A-S-D/Arrows
+                                                    </span>
+                                                    <span className="function">
+                                                        Move
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span className="command">
+                                                        Spacebar
+                                                    </span>
+                                                    <span className="function">
+                                                        Jump
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span className="command">
+                                                        X
+                                                    </span>
+                                                    <span className="function">
+                                                        Pull up events interface
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span className="command">
+                                                        M
+                                                    </span>
+                                                    <span className="function">
+                                                        Open map
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span className="command">
+                                                        V
+                                                    </span>
+                                                    <span className="function">
+                                                        Third person view
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span className="command">
+                                                        B
+                                                    </span>
+                                                    <span className="function">
+                                                        Emote options (Strike a pose!)
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span className="command">
+                                                        U
+                                                    </span>
+                                                    <span className="function">
+                                                        Remove user interface
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <strong>Chat box Commands</strong>
+                                            <ul className="chatbox-commands">
+                                                <li>
+                                                    <span className="command">
+                                                        Teleporting to specific coordinates
+                                                    </span>
+                                                    <span className="function">
+                                                        /goto xx,xx (e.g. /goto 47,-110)
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span className="command">
+                                                        Teleporting to a random busy area
+                                                    </span>
+                                                    <span className="function">
+                                                        /goto crowd 
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span className="command">
+                                                        List all other available commands
+                                                    </span>
+                                                    <span className="function">
+                                                        /help
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <p className="large-paragraph">
+                                                <strong>Good luck and have fun exploring Decentraland and Metaverse Fashion Week!</strong>
+                                            </p>
                                         </p>
                                     </div>
                                 </div>
