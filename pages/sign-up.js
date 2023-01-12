@@ -43,16 +43,16 @@ export default function Home() {
                                 </p>
                                 <div className="steps">
                                     <div className="step">
-                                        <h2>Step 1: Enter Decentraland</h2>
+                                        <h2>How can creators contribute to Metaverse Fashion Week?</h2>
                                         <p>There are two main ways to enter Decentraland during MVFW:</p>
                                         <ol>
                                             <li>
                                                 <p>
-                                                    <strong>You can enter the world through Genesis Plaza</strong>, the default starting location and heart of Decentraland. The location is in the center of the Decentraland map but also has portals you can jump into to get to different areas of the world. In this location you’ll also find robots that can tell you more about Decentraland. 
+                                                    <strong>You can license your IP to wearable designers and distribute your brand to a community of early adopters</strong>, Decentraland is the first and only open-source, web3 metaverse platform that allows fashion designers to design and mint everything from wearable items like hats, sunglasses, t-shirt and dresses to entire skin designs and custom emotes. Pairing metaverse fashion with music and live entertainment along with celebrity meetups in-world are also an attractive feature of the Metaverse fashion week and we are constantly looking for artists who wish to bring their audience to a novel experience in 3D virtual events. 
 
                                                 </p>
                                                 <p>
-                                                    To jump into Genesis Plaza, follow <a href="https://play.decentraland.org/" target="_blank" rel="noreferrer">this link</a>
+                                                    To jump into the Fashion District, follow <a href="https://play.decentraland.org/" target="_blank" rel="noreferrer">this link</a>
                                                 </p>
                                             </li>
                                             <strong>OR</strong>
