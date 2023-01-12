@@ -66,26 +66,20 @@ export default function Home() {
                                 <div className="steps">
                                     <div className="step">
                                         <p>
-                                            Once you decide where you want enter Decentraland, you’ll be taken to the page shown below where you’ll have to decide whether you want to create a Decentraland account by connecting a digital wallet or enter as a guest:
 
                                         </p>
                                         <p>
-                                            <NextImage width={760} height={400} src="/enter-decentraland.png" />
                                         </p>
                                         <p>
                                             <h3>
-                                                <strong>Play Using Wallet</strong>
                                             </h3>
                                                 <p>
-                                                    If you want the full experience of Decentraland, for example if you wanted to buy something special to wear during MVFW, or wanted to permanently save your avatar for return visits to Decentraland, we recommend connecting a digital wallet. To learn more about what that means and how to do it, read this short <a href="http://mvfw.org" target="_blank" rel="noreferrer">article</a>.
                                                 </p>
                                         </p>
                                         <p>
                                             <h3>
-                                                <strong>Play as Guest</strong>
                                             </h3>
                                                 <p>
-                                                If you choose to enter Decentraland as a guest, you’ll be able to jump right into the world without any other obstacles.
                                                 </p>
                                         </p>
                                     </div>
